@@ -51,7 +51,7 @@ groups created the motor controller to control the motors. This is
 documented in the ‘Systeem dossier’ from a previous project group.
 (Systeem Dossier, 2016)
 
-image:../Archive/2018S1/Research/media/current-status/image4.jpeg[image]
+image:../archive/2018S1/Research/media/current-status/image4.jpeg[image]
 
 This motor controller is made by using an Arduino Mega and a custom
 shield with additional custom hardware. The controller recieves data from ROS
@@ -60,7 +60,7 @@ is named Penny and Giles Pilot Plus.
 
 The motor controller is built as shown below:
 
-image:../Archive/2018S1/Research/media/current-status/image5.jpg[image]
+image:../archive/2018S1/Research/media/current-status/image5.jpg[image]
 
 NOTE: As can be seen in the image above, there are still cables for the odometry
 sensors. These are however not used anymore. This has two reasons. The first
@@ -103,11 +103,11 @@ removal of the brake levers, it was neccesary to verify wether the brakes were d
 In order to let Willy move, the brakes had to be deployed. This was orginally a safety feature of the
 mobility scooter, but was not needed any longer.
 
-image:../Archive/2018S1/Research/media/current-status/image6.jpeg[alt=image6,width=300,height=400]
+image:../archive/2018S1/Research/media/current-status/image6.jpeg[alt=image6,width=300,height=400]
 
-image:../Archive/2018S1/Research/media/current-status/image7.png[alt=image7,width=300,height=400]
+image:../archive/2018S1/Research/media/current-status/image7.png[alt=image7,width=300,height=400]
 
-image:../Archive/2018S1/Research/media/current-status/brakeleverremoved.jpg[alt=brakeleverremoved,width=300,height=400]
+image:../archive/2018S1/Research/media/current-status/brakeleverremoved.jpg[alt=brakeleverremoved,width=300,height=400]
 
 Make sure to deploy the brakes. Otherwise Willy won’t work!! There is
 only one way to detect if the brakes are deployed. It’s by simply
@@ -139,15 +139,15 @@ image:media/hardware/battery_new.jpg[image,width=500]
 The mains from the batteries run through a central fuse box mounted at Willy's
 left hand side. The fusebox contains 4 circuitbreakers powering 4 step down convertors
 
-image:../Archive/2018S1/Research/media/current-status/fusebox.jpg[alt=fusebox,width=400,height=300]
+image:../archive/2018S1/Research/media/current-status/fusebox.jpg[alt=fusebox,width=400,height=300]
 
-image:../Archive/2018S1/Research/media/current-status/fuseboxcircuitbreakers.jpg[alt=fuseboxcircuitbreakers,width=400,height=300]
+image:../archive/2018S1/Research/media/current-status/fuseboxcircuitbreakers.jpg[alt=fuseboxcircuitbreakers,width=400,height=300]
 
 The powerleads after the circuit breakers are bundled and routed to a transparant plastic case which
 serves as a power distribution unit. The power distribution unit contains 4 step down converters, controlled
 by 4 switches toggling power for these converters.
 
-image:../Archive/2018S1/Research/media/current-status/powerconverterbox.jpg[alt=powerconverterbox,width=400,height=300]
+image:../archive/2018S1/Research/media/current-status/powerconverterbox.jpg[alt=powerconverterbox,width=400,height=300]
 
 The monitor is powered with 19 volts provided from the powerconverter box.
 The laptop is powered with 19 volts provided from te powerconverter box.
@@ -241,7 +241,7 @@ system v1.1, 2017)
 A LIDAR sensor uses a laser to measure distance. With these measurements
 the sensor makes a map of all the objects in the environment.
 
-image:../Archive/2018S1/Research/media/current-status/image13.jpeg[image]
+image:../archive/2018S1/Research/media/current-status/image13.jpeg[image]
 
 The previous group has done some research concerning LIDAR and the link to
 ROS. But came to the conclusion that it is not possible to create a link
@@ -260,7 +260,7 @@ The LIDAR is connected with an ethernet connection via a router to the pc.
 
 CAUTION: The Kinect is not being used at this moment.
 
-image:../Archive/2018S1/Research/media/current-status/image11.png[image]
+image:../archive/2018S1/Research/media/current-status/image11.png[image]
 
 As a method to navigate inside, initially the Kinect was chosen. This is
 not true anymore. The Kinect is now used to detect if there is a person

@@ -1,5 +1,0 @@
-include::../Header.adoc[]
-
-include::previousgroups.adoc[]
-
-include::Archiveresearch.adoc[]

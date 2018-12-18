@@ -62,6 +62,6 @@ link:{url}/lessons_learned/index.html[Lessons learned]::
         - link:{url}/Status/Status.html[Status]
         - link:{url}/Status/Todo.html[Todo & Advice]
 
-link:{url}/Archive/index.html[Archive]::
-        - link:{url}/Archive/previousgroups.html[Previous Groups]
-        - link:{url}/Archive/Archiveresearch.html[Research Archive]
+link:{url}/archive/index.html[Archive]::
+        - link:{url}/archive/previousgroups.html[Previous Groups]
+        - link:{url}/archive/archiveresearch.html[Research Archive]
