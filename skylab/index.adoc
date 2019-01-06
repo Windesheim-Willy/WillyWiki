@@ -1,6 +1,8 @@
 
 include::../Header.adoc[]
 
+include::setup_skylab.adoc[]
+
 include::Python_scripts.adoc[]
 
 include::Webserver.adoc[]
