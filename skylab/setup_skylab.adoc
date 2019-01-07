@@ -1,4 +1,6 @@
-﻿== Setup Skylab Enviroment
+include::../Header.adoc[]
+
+== Setup Skylab Enviroment
 
 Skylab consist of 3 major components:
 
