@@ -3,7 +3,7 @@ include::../Header.adoc[]
 == ToDo and Advice
 
 === TODO table	
-[cols="4,1,1,1"] 
+[cols="6,1,1,1"] 
 .List of todo items according group 2018 Q3-Q4
 |===
 |Description|BIM|SE|IDS-ESA
