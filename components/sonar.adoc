@@ -62,4 +62,4 @@ The sensors are placed as follows:
 
 image:assets/sonar/Willy.png[image, 300]
 
-It should be noted that not all the sensor are read at the same time. The front sensors are read in a sequence. Only the lowest value is publisched on the topic. The side sensors 
+It should be noted that not all the sensor are read at the same time. The front sensors are read in a sequence. Only the lowest value is publisched on the topic. The side sensors are published on the same topic, but have a different ID. Therefore move_base is able to handle the data in the correct way.
