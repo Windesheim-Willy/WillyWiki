@@ -3,19 +3,19 @@ include::../Header.adoc[]
 == Driving of willy
 
 . **Deploy the brakes** +
-To start Willy, the brakes need to be deployed. Otherwise, Willy will not be able to drive.
-To deploy the brakes you have to use the levers on the front of the motors.
-You can check if the brakes are deployed by trying to push Willy.
-The brakes are applied when the wheels can't rotate anymore.
+Normally a wheelchair has brakes. The brakes of Willy are removed.
 
 . **Deploy the emergency stop** +
 
 . **Turn the power on** +
-Willy needs power to be able to operate.
-
-. **Startup the notebook and Rasberry PI's** +
+Do it in the following order:
+- Start the OpenWRT PI (Which is removed, because this was a private PI)
+- Start the Notebook
+- Start the Senor and SI PI.
 
 . **Undeploy the emergency stop**
+
+IMPORTANT: By default the *brain* will takeover the control. Make sure first move Willy with a Joystick to a safe place.
 
 === Stop Willy
 
@@ -36,4 +36,3 @@ Fill in the password of the PI's
 
 . **Turn of the power** +
 
-. **Deploy the brakes**

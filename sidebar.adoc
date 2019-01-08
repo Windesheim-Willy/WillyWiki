@@ -33,7 +33,6 @@ link:{url}/architecture/index.html[Architecture]::
         - link:{url}/architecture/rostopics.html[ROS topic design]
 
 link:{url}/hardware_nodes/index.html[Hardware nodes]::
-        - link:{url}/hardware_nodes/brain_node.html[brain node]
         - link:{url}/hardware_nodes/sensor_node.html[sensor node]
         - link:{url}/hardware_nodes/si_node.html[si node]
         - link:{url}/hardware_nodes/power_node.html[power node]
@@ -72,4 +71,4 @@ link:{url}/lessons_learned/index.html[Lessons learned]::
 
 link:{url}/archive/index.html[Archive]::
         - link:{url}/archive/previousgroups.html[Previous Groups]
-        - link:{url}/archive/archiveresearch.html[Research Archive]
+        - link:{url}/archive/Archiveresearch.html[Research Archive]

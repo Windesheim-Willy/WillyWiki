@@ -4,7 +4,7 @@ include::../Header.adoc[]
 The localization and navigation stack is collection of nodes which process lidar data and use it to navigate.
 
 === Repository
-[[ Still under development]]
+https://github.com/Windesheim-Willy/navigation_stack[Windesheim-Willy/navigation_stack, role="external", window="_blank"]
 
 === How does it work
 
