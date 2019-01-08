@@ -31,4 +31,4 @@ Besides the two main goals, and transference, weve also redesigned a lot of func
 
 All our documents will be transferred to the new student group through SharePoint. Everything including templates and images for virtual machines and other hardware will be included in the process.
 
-TODO: SharePoint hyperlink
+https://liveadminwindesheim.sharepoint.com/:f:/r/sites/O365-Winnie/Gedeelde%20documenten/Archief%20Willy/2018%20S2?csf=1&e=f1Qcjh[2018 Q3 & Q4 SharePoint archive]
