@@ -1,4 +1,24 @@
 include::../Header.adoc[]
 
 == Brain
-The brain of Willy is a process with multiple sub processes to determine what Willy should do.
+
+The brain brings all the components together. The brain make decisions how and where to drive. This is based on priorities which will be explained on the background chapter.
+
+=== Repository
+====
+https://github.com/Windesheim-Willy/brain[Windesheim-Willy/brain, role="external", window="_blank"]
+====
+
+=== Prerequisites
+All other components must be running for the brain to work correctly.
+
+=== How to run?
+The brain will start automatic when the notebook is running. The brain node can be started manually by going into the root of the brain repo:
+
+[source,shell]
+----
+./START start
+----
+
+
+=== Background

@@ -15,5 +15,4 @@ https://github.com/Windesheim-Willy/power_node[Windesheim-Willy/power_node, role
 - link:{url}/components/joystick.html[Joystick]
 - link:{url}/components/lidar.html[Lidar]
 - link:{url}/components/ROS-master.html[Ros Master]
-- link:{url}/components/Localization_and_navigation.html[Naviagtion stack]
-
+- link:{url}/components/Localization_and_navigation.html[Navigation stack]
