@@ -64,10 +64,8 @@ link:{url}/Radeffect_app/index.html[Radeffect App]::
         - link:{url}/Radeffect_app/Radeffect_app.html[Radeffect App]
         
 link:{url}/lessons_learned/index.html[Lessons learned]::
-        - link:{url}/lessons_learned/Bugs.html[Known Bugs]
-        - link:{url}/lessons_learned/Findings.html[Findings splitsen naar verschillende zaken]
-        - link:{url}/lessons_learned/Status.html[Status]
         - link:{url}/lessons_learned/Todo.html[Todo & Advice]
+		- link:{url}/lessons_learned/Lessonslearned.html[Lessons Learned]      
 
 link:{url}/archive/index.html[Archive]::
         - link:{url}/archive/previousgroups.html[Previous Groups]
