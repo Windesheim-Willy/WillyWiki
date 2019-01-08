@@ -2,7 +2,7 @@ include::../Header.adoc[]
 
 == Radeffect App
 Together with another group of Windesheim students an App was developed foor Willy. The App is developed in Mendix.
-The application can be found here: https://callwilly-sandbox.mxapps.io/ The function of the App is to call Willy over. This is done by:
+The application can be found here: https://callwilly-sandbox.mxapps.io/ The main function of the App is to call Willy over. This is done by:
 
 Post:
 
