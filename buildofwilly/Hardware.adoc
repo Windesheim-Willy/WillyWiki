@@ -238,7 +238,7 @@ The LIDAR is connected with an ethernet connection via a router to the pc.
 
 ==== Kinect
 
-CAUTION: The Kinect is not being used at this moment.
+IMPORTANT: The Kinect is not being used at this moment.
 
 image:../archive/2018S1/Research/media/current-status/image11.png[image]
 

@@ -10,3 +10,5 @@ https://github.com/Windesheim-Willy/sensor_node[Windesheim-Willy/sensor_node, ro
 
 === Components
 - link:{url}/components/sonar.html[Sonar]
+- link:{url}/components/openmv.html[OpenMV]
+- link:{url}/components/imu.html[IMU]

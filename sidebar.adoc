@@ -33,7 +33,6 @@ link:{url}/architecture/index.html[Architecture]::
         - link:{url}/architecture/rostopics.html[ROS topic design]
 
 link:{url}/hardware_nodes/index.html[Hardware nodes]::
-        - link:{url}/hardware_nodes/brain_node.html[brain node]
         - link:{url}/hardware_nodes/sensor_node.html[sensor node]
         - link:{url}/hardware_nodes/si_node.html[si node]
         - link:{url}/hardware_nodes/power_node.html[power node]
