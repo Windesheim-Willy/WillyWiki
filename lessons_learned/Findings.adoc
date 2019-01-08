@@ -40,6 +40,11 @@ to deploy the brake. We can't tight them because the screw is malformed.
 - The current battery shell will not fit because of the new motorcontroller. Therefore we
 created a set of new brackets to mount the 6 batteries onto the chassis.
 
+== Navigation findings
+- Move_base as of this moment is not aware of the shape of the robot. This results in issues where the robot thinks it can pass between objects or rotate while in reality it can't. It advisable to make move_base aware of the shape of the robot.
+- The global planner has not been tuned yet. As of this moment it tries to create a route which is very close to the walls because it wants the fastest route. It would be better for the robot to be driving in the middle of a hallway then hug the wall. The global planner als makes very sharp corners which the robot can't handle very well. A custom planner or tweaking the standard planner can help a lot.
+- The the default default planner which is currently in optimized for a robot with powered rear wheels and a steering front wheels like a car. However willy has two powered wheels which steer using differential power and two swivel wheels.
+
 === Social interaction
 - There are a lot of ways to communicate with Willy. The ones we're using are: +
 -> Leap + 
