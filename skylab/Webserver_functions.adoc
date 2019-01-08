@@ -1,6 +1,6 @@
 include::../Header.adoc[]
 
-== Functions of the Webserver
+== Functions of the webserver
 
 The webserver is the central information and management point of Willy.
 
@@ -58,11 +58,11 @@ The last item gives the possibility to download the answers from the website to 
 
 === Onderhoud
 
-The maintenance item give the possibility to edit the configuration and password file used by several scripts in the Webserver.
+The Onderhoud (Dutch for maintenance) item give the possibility to edit the configuration and password file used by several scripts in the Webserver.
 
 === Willy management
 
-The Willy management give the possibility to do RDP sessions to the two Hyper-V hosts in Skylab and take over the screen of Willy (the SI node).
+The Willy management item gives the possibility to do RDP sessions to the two Hyper-V hosts in Skylab and take over the screen of Willy (the SI node).
 
 === Willy Wiki
 

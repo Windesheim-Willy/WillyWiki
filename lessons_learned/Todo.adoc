@@ -2,53 +2,46 @@ include::../Header.adoc[]
 
 == ToDo and Advice
 
-=== ToDo
+=== TODO table	
+[cols="6,1,1,1"] 
+.List of todo items according group 2018 Q3-Q4
+|===
+|Description|BIM|SE|IDS-ESA
 
-==== Indoor navigation
-
-Indoor navigation was realized with the use of a lidar and ultrasonic sensors. Willy can map a space and plan routes within it. The following features and improvements are recommended:
-
-* Fine-tune indoor navigation
-* Indoor navigation localization registration;
-Remember where Willy was in a certain room so he explores new places first.
-* The storage and loading of previously mapped spaces and recognizing Willy's current location for further navigation.
-* Navigating in spaces with a large audience. Recognizing moving objects and making decisions based on this.
-
-==== Outdoor navigation
-
-The only thing that has been realized so far with regard to outdoor navigation is GPS and the compass. GPS coordinates can be received inside ROS when subscribed on the /GPS topic.
-
-* Location based on GPS
-* Visualize GPS location.
-* Accessibility determination based on location
-* Route determination based on GPS and location determination
-* Indoor navigation localization registration to keep Willy within a certain area.
-
-
-==== Social interaction
-Social interaction has been investigated. As a group we have focused on offline functionality at the request of the client. Offline functionality has been investigated;
-https://Windesheim-Willy.github.io/WillyWiki/Research/Social-interaction.html[Research Social Interaction]
-
-Offline wakeword recognition has been realized through the use of 'Snowboy'. Documentation about Snowboy can be found on:
-http://docs.kitt.ai/snowboy/[Snowboy Documentation].
-
-Implementation of Snowboy on Willy is described here:
-https://Windesheim-Willy.github.io/WillyWiki/Config/index.html
-
-
+|Collecting more sensorinformation. Ie. when Willy drives over a bump this information is collected to analyse if the floor needs maintaince. | X | X | 
+|Create multiple smaller Willies that collaborate and drive around on diffrent locations.| X | X | 
+|DataScience: Collect more data  to analyse the input of all topic information. Use more machine learning. | X | X | 
+|Financial planning: Develop more financial resources like sponsorship. | X | | 
+|Develop financial ownership and responsibility| X | | 
+|Develop sponsoring and donationprogram. Financial funding of Willy needs to improve to be able to invest in newer features.| X | | 
+|Marketresearch: The physical hardware will eventually run out of development options. Upgrade to Willy 2.0| X | | X
+|Develop emotion and expression recognition.| X | X | 
+|Develop autonomous driving on other locations than T5 Windesheim without the need of AprilTags or other learning features.| | X | X
+|Implement GPS module for outdoor navigation. | | X | 
+|Research navigation in an area with alot of glazing.| X | | 
+|Improve autonomous driving specifically for the measurement and movement of Willy.| X | X | 
+|Improve hardware and software for listening. Reduce impact of environmental noise.| | X | 
+|Extend Willys speech. Introduce multiple voices and languages.| | X | 
+|Extend survey options with open or more difficult questions.| X | X | 
+|Secure Willys webpage. | | X | 
+|Integrate Social Interaction without the need of Hello Willy. | | X | 
+|Develop speech driving options. | | X | 
+|Create new functions like a Robotarm.| X | X | X
+|Develop AC power features. Willy can be powered on even when not around.| | | X
+|Redesign Skylab. Remove a few hypervisors to make it more manageble.| | | X
+|Move the Skylab machines to the corperate cloud of Windesheim.| | | X
+|Remote power reset for multiple machines on Willy.| | | X
+|Adjust VPNtunnel between Willy and Cloud. Make MultiMaster usable in Skylab.| | | X 
+|React on emotions and expressions.| | X | 
+|Improve look and feel of Willy.| X | | 
+|Use the outcome of the research of Willys social interaction.| X | X | 
+|Benefit of the communication between Social Interaction and Navigation. Ie. drive around if Willy is happy.| | X | 
+|===
 
 === Advice
 
-First, it's important to try to understand Willy and get trusted with the
-robot. Reading of all the documentation and trying to understand it is a
-must. Use the documentation to drive Willy. Another essential part of
-understanding Willy is the understanding of the underlying framework.
-Understanding how ROS works makes understanding Willy much easier.
+The client walks in to Windesheim University of Applied Sciences and is being welcomed by Willy. Willy can drive autonomic inside and outside the University and makes contact to people. During a conversation Willy can recognise human emotions, so he can tell a joke to cheer people up. 
 
-Willy is a large and complicated project. There are a lot of things that
-can go wrong. At the start of the project this can give a lot of frustation.
-When this happens it is essential to know Willy. Dealing with such
-situations can help understanding Willy even more.
+Multiple teams have worked on the projects Willy to realise that dream for the client however there is still much work to be done. 
 
-Another advice is that it is essential to keep updating this wiki. That way
-contunation of the project keeps guaranteed.
+We have described a few possible future technology projects for our client and project team in the TODO list.
