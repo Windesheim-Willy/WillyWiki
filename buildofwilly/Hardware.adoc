@@ -41,6 +41,9 @@ a|
 |Wireless Connection options |WLAN chip
 |===============================================
 
+==== Raspberry Pi
+Windesheim has provided us with spare Raspberry Pis. In order to make the physical hardware modulair we used a few Raspberrys. These are all installed by applying each of the defined git repositorys. Installation of each Pi is described for each repository. 
+
 ==== Motors and controller
 Willy contains 2 motors from a second-hand mobility scooter. A previous
 project group has chosen this option as documented in the ‘Ontwerp verslag’.
