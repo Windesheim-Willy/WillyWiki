@@ -49,6 +49,11 @@ to deploy the brake. We can't tight them because the screw is malformed.
 - The kinect cannot be used outside. The IR camera can't handle the bright sunlight.
 
 
+== Navigation
+- Move_base as of this moment is not aware of the shape of the robot. This results in issues where the robot thinks it can pass between objects or rotate while in reality it can't. It advisable to make move_base aware of the shape of the robot.
+- The global planner has not been tuned yet. As of this moment it tries to create a route which is very close to the walls because it wants the fastest route. It would be better for the robot to be driving in the middle of a hallway then hug the wall. The global planner als makes very sharp corners which the robot can't handle very well. A custom planner or tweaking the standard planner can help a lot.
+- The the default default planner which is currently in optimized for a robot with powered rear wheels and a steering front wheels like a car. However willy has two powered wheels which steer using differential power and two swivel wheels.
+
 === Social interaction
 - The ambient noise can make it hard to speak with Willy. We used the mute function on the microphone provided with Willy. 
 - The speech of Willy can be rather robotic. 
