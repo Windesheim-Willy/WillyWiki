@@ -14,15 +14,15 @@ image:assets/human_detection/debug.png[image,width=700]
 
 __Package displaying debug output during development (see debug mode). You see the developer of the package raising 2 fingers telling he's two meters away from the webcam.__
 
-The packages can display the output to an window to help analyse the algoritm and allow you to see visuals whenever you want to do tweaks. The follow metrics are written on the screen; 
+The packages can display the output to an window to help analyse the algorithm and allow you to see visuals whenever you want to do tweaks. The follow metrics are written on the screen; 
 
 - Number of humans currently detected
 - Total number of humans detected during runtime 
-- The time it took to analyze the current frame (at 0.065 seconds that will make it about 15 fps)
+- The time it took to analyse the current frame (at 0.065 seconds that will make it about 15 fps)
 - The ID of the human being tracked
 - The frame dimensions (height and width)
 - The accuracy of the result
-- The distance in centimeters
+- The distance in centimetres
 
 To get this debug frame open `src/human_detection/src/main.h`  and change the line 
 
@@ -43,16 +43,16 @@ The distance of the result will be calculated based on the height of the rectang
 The calculation is performed in `src/human_detection/src/Tracking/Rectangle.cpp`. Where the variable **tl** means top left and the variable **br** means bottom right. The aim is a margin within 20 cm on both sides.
 
 === Human tracking
-To make the algorithm function well it requires to run above 5 FPS. Since the tracking is done on the tp (top left) and br (bottom right) of a rectangle between each frame. The difference in position for each person may not too big thus require enough frames. Every frame a match has been been the position of the rectangle is updated. Each match will be placed in an vector (array) as a Rectangle object. The equation can be found in `bool Rectangle::withinOffset(const Rect &rect)`.
+To make the algorithm function well it requires to run above 5 FPS. Since the tracking is done on the tl (top left) and br (bottom right) of a rectangle between each frame. The difference in position for each person may not too big thus requiring a high enough frame rate. Every frame a match has been made, the position of the rectangle is updated. Each match will be placed in an vector (array) as a Rectangle object. The equation can be found in `bool Rectangle::withinOffset(const Rect &rect)`.
 
 === Technical design
 image:assets/human_detection/class_diagram.jpg[image,width=700]
 
-The two classes _Rectangle_ and _RectangleTracker_ are used to track humans. When extending the tracker with a facial recognising the classes can easliy be refactored. The RectangleTracker can easly be a generic to support both types (assuming you'll write a new face class).
+The two classes _Rectangle_ and _RectangleTracker_ are used to track humans. When extending the tracker with a facial recognising the classes can easily be re-factored. The RectangleTracker can easily be a generic to support both types (assuming you'll write a new face class).
 The _OpenCVTracking_ class handles all OpenCV output and gives the found _Rect_ coordinates to to the _RectangleTracker_ that matches them to an _Rectangle_.
 
 === Proposed enhancements
-The Haar Cascades for the upper body work quite good, however within a small distance facial recognising will work far better. Most parts of the code can be reused for this purpose. The distance are quite accurate but are very volatile moving in their inaccuracy (+/-20 cm) limits. This can easly be fixed by making it an average and calculating it each tick (frame).
+The Haar Cascades for the upper body work quite well, although within short distance facial recognition works far better. Most parts of the code can be reused for this purpose. The distance are quite accurate but are very volatile moving in their inaccuracy (+/-20 cm) limits. This can easily be fixed by making it an average and calculating it each tick (frame).
 
 - Add face recognising
 - Average distance

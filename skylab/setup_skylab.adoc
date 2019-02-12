@@ -8,9 +8,9 @@ Skylab consist of 3 major components:
 * ESXhost or Virtualbox on Windowshost
 * Ubuntu Servers
 
-This paige explains howto setup the basic Skylab enviroment.
+This page explains howto setup the basic Skylab environment.
 
-=== First step request a skylab enviroment
+=== First step request a skylab environment
 
 *	Request project lab use: “Project Willy” as a reference, this is a known project for Skylab managers. Via https://skylab.windesheim.nl (Login with: studentnr only! not with @student.windesheim.nl)
 *	After approval you can request machines.
@@ -50,12 +50,14 @@ with administrator and default password: Welkom01!
 
 === Connect Willy to Skylab
 
-*   First make sure the routernode (rpi)and laptop are turned on. and verify you have internet.
+*   First make sure the router node (rpi) and laptop are turned on. and verify you have an internet connection.
 *   Next verify vpn connection: On the laptop try to ping to 10.10.1.1 if replies are succesfull it all works!
 *   If not please check DNSName: ping skylabwilly.dynu.net (this should point to currenct Skylab ip) If not please change manually: https://www.dynu.com/en-US/ControlPanel/DDNS login with Willy google account.
-* If this does not work, reimage the Pi version model 3 (not +) with the version found on sharepoint. (routernode.img)
+* If this does not work, reimage the Pi version model 3b+ with the version found on sharepoint. (routernode.img)
 
-*   A more detailed description can be found on sharepoint in the skylab folder on howto setup openwrt.
+NOTE: This could be an out-of-date image, since OpenWRT was recently (as time of writing at 12/02/19) ported to the 3b+.
+
+*   A more detailed description can be found on sharepoint in the skylab folder on how to set up openwrt.
 
 === Connect to Skylab over VPN Client
 

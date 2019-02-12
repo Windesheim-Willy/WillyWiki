@@ -1,7 +1,7 @@
 include::../Header.adoc[]
 
 == Lidar
-The lidar is a node to process the raw lidar information to the lidar topic.
+The lidar is a node to process the raw LIDAR information to the LIDAR topic.
 
 === Repository
 ====
@@ -9,10 +9,10 @@ https://github.com/Windesheim-Willy/lidar[Windesheim-Willy/lidar, role="external
 ====
 
 ==== Background
-The previous group has also done research on a Lidar sensor.
+The previous group has also done research on a LIDAR sensor.
 Unfortunately the previous documentation stated that it was not possible
-to link a Lidar to ROS. Also other methods where somehow researched by a
-previous group but not in the form of a Lidar. (Research localization
+to link a LIDAR to ROS. Also other methods where somehow researched by a
+previous group but not in the form of a LIDAR. (Research localization
 system v1.1, 2017)
 
 A LIDAR sensor uses a laser to measure distance. With these measurements
@@ -30,4 +30,4 @@ After doing some research we found that it is possible and supported to link ROS
 At this stage we use the LIDAR to navigate with Willy. The sensor is 
 placed at the front of the robot.
 
-The LIDAR is connected with an ethernet connection via a router to the pc.
+The LIDAR is connected with an Ethernet connection via a router to the pc.

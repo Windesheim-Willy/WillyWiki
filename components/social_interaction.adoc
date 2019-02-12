@@ -3,7 +3,7 @@ include::../Header.adoc[]
 == Social interaction
 The social interaction creates the interaction of Willy. He listens and speaks with people.
 
-The social interaction is build with NodeJS. NodeJS has a webserver and connects with web sockets to the frontend of Willy. The NodeJS server processes all information of the interactions and passes this to the frontend. The frontend doesn't contains any logic of the social interaction, only the logic of displaying information to the website.
+The social interaction is build with NodeJS. NodeJS has a webserver and connects with web sockets to the front-end of Willy. The NodeJS server processes all information of the interactions and passes this to the front-end. The front-end doesn't contains any logic of the social interaction, only the logic of displaying information to the website.
 
 === Repository
 ====
@@ -17,7 +17,7 @@ https://github.com/Windesheim-Willy/social_interaction[Windesheim-Willy/social_i
 ----
 
 ==== Nodejs packages (npm)
-Never run `npm install` outside the Docker container to prefent OS conflicts between the Nodejs packages.
+Never run `npm install` outside the Docker container to prevent OS conflicts between the Nodejs packages.
 
 Run the npm install command:
 [source,shell]
@@ -42,7 +42,7 @@ npm run sass:watch
 ----
 
 === Websocket API
-API documentation for the connection between de NodeJS server and frontend.
+API documentation for the connection between de NodeJS server and front-end.
 
 [options="header"]
 |=======================
@@ -65,7 +65,7 @@ The interaction has multiple type of interactions.
 Tell information about Willy and show the image of Willy.
 
 ==== Information with a map
-Show a map at the frontend of Willy.
+Show a map at the front-end of Willy.
 
 The map requires a image file which will be shown to the user. This file should be located at the path `public/assets/map.png`.
 

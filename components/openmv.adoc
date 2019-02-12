@@ -2,7 +2,7 @@ include::../Header.adoc[]
 
 == OpenMV
 
-The OpenMV camera is used for AprilTag scanning. When a AprilTag is scanned, Willy knows where he is on the map.
+The OpenMV camera is used for AprilTag scanning. When a AprilTag is scanned, Willy knows where it is on the map.
 
 === Repository
 ====
@@ -95,5 +95,5 @@ tagLocations = {1:(13.489720850756148, 60.59727947971955, 0.0),
 ----
 
 === tag scanning
-Whe a AprilTag is scanned, the Tag-number, degrees and wind direction (N, E, S, W) are published on the topic.
+Whe a AprilTag is scanned, the Tag-number, degrees and cardinal direction (N, E, S, W) are published on the topic.
 The *Brain* and *Move Base* uses this information that is published on the topic.

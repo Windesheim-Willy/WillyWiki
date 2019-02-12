@@ -1,35 +1,35 @@
 include::../Header.adoc[]
 
 == Willy Wiki
-This wiki is setup to increase the transferability of the project. Everything you need to start is documented here.
+This wiki was set up to increase the transferability of the project. Everything you need to start working on this project is documented here.
 Detailed documents are referenced trough the wiki if you need more information.
 
 === Introduction
-The wiki is setup using AsciiDoc, TravisCI & Github pages. In practice we use AsciiDoc as source code, TravisCI to convert to html/pdf and Github Pages for publishing the website. This is visually shown in the image below, this is taken from the http://mgreau.com/posts/2016/03/28/asciidoc-to-gh-pages-with-travis-ci-docker-asciidoctor.html[tutorial]
+The wiki is set up using AsciiDoc, TravisCI & Github pages. In practice we use AsciiDoc as source code, TravisCI to convert to html/pdf and Github Pages for publishing the website. This is visually shown in the image below, this is taken from the http://mgreau.com/posts/2016/03/28/asciidoc-to-gh-pages-with-travis-ci-docker-asciidoctor.html[tutorial]
 we followed.
 
 
 image::http://mgreau.com/posts/images/cover-asciidoc-ghpages.svg[AsciiDoc to Github Pages with Travis and Docker Asciidoctor,950]
 
 === Why AsciiDoc
-Why AsciiDoc is chosen as our markdown language. During the search for a good Wiki tool, we eventually stumbled upon Github Pages. Github pages in intended to automatically publish markdown for you as a html site and you can add more functions by Using Jekyll. However quickly limitations in Markdown where found and the Jekyll implementation made if far more complex due to different plugins. That's why it is decided to use AsciiDoc at it's raw form.
+Why AsciiDoc was chosen as our markdown language. During the search for a good Wiki tool, we eventually stumbled upon Github Pages. Github pages in intended to automatically publish markdown for you as a html site and you can add more functions by using Jekyll. However, limitations in Markdown where quickly found and the Jekyll implementation made if far more complex due to different plugins. That's why it is decided to use AsciiDoc at it's raw form.
 
-This is directly the main advantage of using Markdown, while you can use plugins it's main functionality makes it the perfect language for creating a Wiki. In terms of markdown languages you can follow this list as a rule of thumb:
+This is the main advantage of using Markdown. While you can use plugins, its main functionality makes it the perfect language for creating a Wiki. In terms of markdown languages you can follow this list as a rule of thumb:
 
 * Markdown (MD)
 ** Is the most simplest markdown language out there, but is also it's main weakness
 * AsciiDoc (Adoc)
 ** Is more versatile in the basics and much more rich in terms of formatting and plugins
 * LaTex (Tex)
-** Is more professional focussed and contains a lot of functions at its core where in other markdown languages you need plugins
+** Is more professionally focused and contains a lot of functions at its core where in other markdown languages you need plugins
 
 [NOTE]
 --
 This should also clarify the reason that AsciiDoc is chosen as the source language of this Wiki. <<Markdown vs AsciiDoc>>
 --
 
-=== How the Wiki is setup using AsciiDoc with TravisCI and Github Pages
-The wiki is setup fairly easy, especially when you know your way around Github and TravisCI. So it is important to read into these topics if you don't know what these tools mean. And for AsciiDoc you'll learn it along the way as we did.
+=== How the Wiki is set up using AsciiDoc with TravisCI and Github Pages
+The wiki is set up fairly easy, especially when you know your way around Github and TravisCI. So it is important to read into these topics if you don't know what these tools mean. And for AsciiDoc you'll learn it along the way as we did.
 
 === Conversion
 As told in the introduction AsciiDoc is used as a source language, which then can be converted to whatever format you like. Most commonly HTML and PDF.
@@ -43,7 +43,7 @@ The following environment variables must be set for the script to work properly.
 
 [NOTE]
 --
-Travisci is already configured for the windesheim-willy.github.io/WillyWiki/ repository. No additional configuration is required. 
+TravisCI is already configured for the windesheim-willy.github.io/WillyWiki/ repository. No additional configuration is required. 
 
 ===== How-to Config
 The config file used by TravisCI is link:https://raw.githubusercontent.com/Windesheim-Willy/WillyWiki/master/.travis.yml[travis.yml]. If you are not familiar with Travis it basically asks you for the following:
@@ -92,7 +92,7 @@ script:
 
 [NOTE]
 --
-Because these commands do not allow for recursive generation more than one folder deep some more lines are added to make sure the Archive folder is converted. A better fix stil need to be implemented.
+Because these commands do not allow for recursive generation more than one folder deep some more lines are added to make sure the Archive folder is converted. A better fix still need to be implemented.
 --
 
 [CAUTION]
@@ -173,7 +173,7 @@ The Asciidoctor wiki is a good source, you also might notice the familiar look
 link:https://asciidoctor.org/docs/user-manual/#introduction-to-asciidoctor[]
 
 [TIP]
-A hardcoded sidebar is used to avoid using Docbook, it might be worth to take a look at this format as it is being used by the official sources as well. The main disadvantage of this is that it makes the Wiki one long HTML page with a large index, however for PDF export this would be fabiolous. See link:https://asciidoctor.org/docs/user-manual/#introduction-to-asciidoctor[Asciidoctor Wiki] as an example.
+A hardcoded sidebar is used to avoid using Docbook, it might be worth to take a look at this format as it is being used by the official sources as well. The main disadvantage of this is that it makes the Wiki one long HTML page with a large index, however for PDF export this would be fabulous. See link:https://asciidoctor.org/docs/user-manual/#introduction-to-asciidoctor[Asciidoctor Wiki] as an example.
 
 === References
 
