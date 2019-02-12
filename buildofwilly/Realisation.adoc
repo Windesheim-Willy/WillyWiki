@@ -15,7 +15,7 @@ image::media/st02.jpg[]
 
 image::media/bmp01.jpg[]
 
-=== Mold
+=== Mould
 
 image::media/maldesign.jpg[]
 
@@ -37,7 +37,7 @@ We used the workshop of Koers Polyester Techniek in Nieuwleusen. http://koerspol
 
 image::media/koers-logo.jpg[]
 
-The mold is covered with glass fiber and polyester resin. Starting with one base layer with a 225 gr/m2 and following with four layers of 600 gr/m2. 
+The mould is covered with glass fibre and polyester resin. Starting with one base layer with a 225 gr/m2 and following with four layers of 600 gr/m2. 
 
 
 ==== Preparation

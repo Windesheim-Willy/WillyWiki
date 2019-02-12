@@ -3,19 +3,19 @@ include::../Header.adoc[]
 == Driving of willy
 
 . **Deploy the brakes** +
-Normally a wheelchair has brakes. The brakes of Willy are removed.
+Normally a wheelchair has brakes. The brakes of Willy have been removed.
 
 . **Deploy the emergency stop** +
 
 . **Turn the power on** +
 Do it in the following order:
-- Start the OpenWRT PI (Which is removed, because this was a private PI)
+- Start the OpenWRT PI
 - Start the Notebook
-- Start the Senor and SI PI.
+- Start the Sensor and SI PI.
 
 . **Undeploy the emergency stop**
 
-IMPORTANT: By default the *brain* will takeover the control. Make sure first move Willy with a Joystick to a safe place.
+IMPORTANT: By default the *brain* will takeover the control. Make sure to move Willy to a safe place with the contoller first.
 
 === Stop Willy
 

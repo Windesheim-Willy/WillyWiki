@@ -22,12 +22,16 @@ image::media/image1.jpg[]
 
 The bins on each side of Willy will be used to encourage people to throw away their garbage. Willy will ask for trash.
 
+NOTE: The bins are not in the current (12/02/19) build any more, since it is no longer a garbage collection robot.
+
 image::media/image2.jpg[]
 
-The Kinect is used to look for people (skeletons) so that Willy can interact with them. The LiDAR which is placed on the front of the robot is used for indoor navigation and might be used for outdoor obstacle detection. 
+The Kinect is used to look for people (skeletons) so that Willy can interact with them. The LIDAR which is placed on the front of the robot is used for indoor navigation and might be used for outdoor obstacle detection. 
 
-Behind the LiDAR there is a LEAP-motion controller which can be used to control the display with gestures.
+Behind the LIDAR there is a LEAP-motion controller which can be used to control the display with gestures.
 The bumpers in the front and in the back of the robot is filled with ultrasonic sensors. Six in the front, six in the back and four downwards to look for kerbstones  and potholes. Inside the robot there are six 33Ah car batteries which supply the necessary power. In the rear and top of Willy there are fans to cool the whole robot. 
+
+NOTE: The leap motion controller has been removed in favour of speech recognition.
 
 image::media/image3.jpg[]
 
@@ -98,6 +102,8 @@ image::media/frame.jpg[]
 The front bumper contains six ultrasonic sensors for a wide view. It also has two sensors aimed to the ground. With these sensors things like a sidewalk or potholes can be detected.
 
 image::media/frontbumper.jpg[]
+
+NOTE: The front bumber only contains 3 sensors at the moment (12/02/19), and there are 2 at the rear, one on each side. The actual cover is no longer really used due to changes in the design.
 
 ==== Assembly 5 rear bumper
 

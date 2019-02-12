@@ -2,7 +2,7 @@ include::../Header.adoc[]
 
 == IMU
 
-The IMU sensor (pose tracking) is used to get a higher accuration for navigation.
+The IMU sensor (pose tracking) is used to get a higher accuracy for navigation.
 
 === Repository
 ====

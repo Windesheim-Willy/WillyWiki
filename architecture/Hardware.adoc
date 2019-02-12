@@ -4,12 +4,12 @@ include::../Header.adoc[]
 
 === Standpoints
 
-The hardware architecture is design with a set of standpoints just as the software architecture.  
+The hardware architecture is designed with a set of standpoints just as the software architecture.  
  
-* Use low power hardware if possible to save power consumption
+* Use low-power hardware if possible to reduce power consumption
 * Clustering similar functions on a separate hardware node
-* Using multiple hardware nodes ensured non-disruptive node failure
-* Functions that can be ran offsite - Skylab - should
+* Using multiple hardware nodes to ensure non-disruptive node failure
+* Functions that can be run offsite - Skylab - should
 * Variations of OS software is possible as long as topic communication is possible
 * Variations of ROS software is possible as long as topic communication is possible
 * Simultaneous development is possible
@@ -24,7 +24,7 @@ image::media/hardware-architecture.jpg[]
 
 === Usability
 
-By having multiple VPN instances, its possible - if all hardware is powered on - to connect through Skylabs to the individual hardware nodes on Willy even if not physically near him. Another option is to physically connect to WillyLAN and access either Skylab or Willy hardware nodes. 
+By having multiple VPN instances, it's possible - if all hardware is powered on - to connect through Skylabs to the individual hardware nodes on Willy even if not physically near him. Another option is to physically connect to WillyLAN and access either Skylab or Willy hardware nodes. 
 
 [NOTE]
 Designing this architecture and keeping it up to date can be done by editing the vsdx files in Microsoft Visio. 
