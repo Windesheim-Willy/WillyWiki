@@ -1,0 +1,35 @@
+include::../Header.adoc[]
+
+== Motor controller
+The motor controller listens to the drive topic and controls the motors of Willy.
+
+=== Repository
+====
+https://github.com/Windesheim-Willy/motor_controller[Windesheim-Willy/motor_controller, role="external", window="_blank"]
+====
+
+=== How P&G Pilot Plus works
+The communication between the P&G (Penny and Giles) Joystick and Motorcontroller is done with a serial connection. Two variables in within the data packet contain the throttle (drive) and direction (turn). Both are signed integers with an limit of -100/100. They correspond with the 360 degrees position of the joystick.
+
+==== Arduino reading /cmd_vel messages from ROS
+The geometry twist messages broadcast by ROS will be translated by the Arduino motor controller to match the serial communication done by the Joystick controller from P&G. The data send from ROS will be multiplied with 100 and capped on their maximum value. Only two axes of the message are being used.
+
+[source,cpp]
+----
+    throttle = twistMsg->linear.x * 100;
+    direction = twistMsg->angular.z * 100;
+----
+
+The P&G Joystick emits a datagram package that the Willy motor controller emulates. Within the datagram there is a forward/back integer and a direction (left/right) integer. Those are calculated from the twistMsg to the respective P&G values.
+
+=== Broadcasting to the emergency channel
+Every iteration within the critical loop of the state of the emergency button will be broadcast. The motor controller will interrupt the circuits on a hardware level when the button is pushed. No software has been written to do any logic with the state of the button other than broadcasting its state.
+
+=== How to compile?
+All the dependencies (headers from ros) are copied from the Kinetic Kame release into the project. You'll need to the following to compile and flash the Arduino:
+
+1. VSCode with Platform.io extension installed
+2. Arduino MEGA
+
+When building for the first the Platform.io will add some files in the .vscode directory that can be ignored. Its not recommended to add them to GiT. The files have hard-coded paths containing the username and are ignored. 
+To flash the Arduino simply press Upload in the Plaform.io extension. 

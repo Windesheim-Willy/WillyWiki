@@ -1,0 +1,13 @@
+include::../Header.adoc[]
+
+== Joystick
+
+The joystick is a node to process the raw joystick input signal to the direct input topic.
+
+=== Repository
+====
+https://github.com/Windesheim-Willy/joystick[Windesheim-Willy/joystick, role="external", window="_blank"]
+====
+
+=== Prerequisites
+The Laptop requires the device */dev/input/js0* to be connected to the host. In most cases a knock-off PS3 controller or Xbox controller will do the trick. The controller requires to have the _select_ button be pressed when controlling Willy with the left analogue stick. This component uses the default settings for _teleop_ twist joy package, which may require a bit practice to maneuver through the building.

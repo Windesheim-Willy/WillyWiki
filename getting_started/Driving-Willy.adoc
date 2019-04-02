@@ -1,0 +1,38 @@
+include::../Header.adoc[]
+
+== Driving of willy
+
+. **Deploy the brakes** +
+Normally a wheelchair has brakes. The brakes of Willy have been removed.
+
+. **Deploy the emergency stop** +
+
+. **Turn the power on** +
+Do it in the following order:
+- Start the OpenWRT PI
+- Start the Notebook
+- Start the Sensor and SI PI.
+
+. **Undeploy the emergency stop**
+
+IMPORTANT: By default the *brain* will takeover the control. Make sure to move Willy to a safe place with the contoller first.
+
+=== Stop Willy
+
+. **Deploy the emergency stop** +
+
+. **Shutdown all raspberry PI's from the notebook** +
+
+.. Open the terminal on the notebook
+
+
+----
+sh /opt/willy/components/ansible/shutdown-pi.sh
+----
+
+Fill in the password of the PI's
+
+. **Shutdown the notebook** +
+
+. **Turn of the power** +
+

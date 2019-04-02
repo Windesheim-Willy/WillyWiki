@@ -1,0 +1,16 @@
+
+include::../Header.adoc[]
+
+include::setup_skylab.adoc[]
+
+include::Python_scripts.adoc[]
+
+include::Webserver.adoc[]
+
+include::Webserver_functions.adoc[]
+
+include::Skylab_servers.adoc[]
+
+include::ROS_install_on_Ubuntu_VMs.adoc[]
+
+include::DNS_DHCP_pfSense_Ubuntu.adoc[]

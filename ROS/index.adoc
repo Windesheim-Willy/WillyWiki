@@ -1,7 +1,0 @@
-
-include::../Header.adoc[]
-
-include::Introduction.adoc[]
-
-include::Navigation.adoc[]
-

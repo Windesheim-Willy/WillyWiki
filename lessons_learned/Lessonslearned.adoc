@@ -1,0 +1,61 @@
+include::../Header.adoc[]
+
+IMPORTANT: This pages needs to be up to date. 9-1-2019 latest updated. 
+
+
+== Lessons Learned
+
+This page contains a list of lessons we learned during the development of Willy during the 2018 semesters. 
+
+=== Driving
+- It is quite hard to deploy and undeploy the brakes.
+- When the battery voltage drops below a certain level, Willy will stop driving at 
+irregular intervals. This is probably an internal security system. The brakes are
+also deployed causing an abrupt stop.
+- When driving manually, Willy uses characters pressed on the keyboard to move. When 
+a lot of characters are pressed in a short time, Willy will try to process the complete
+list of characters, seeming to be uncontrollable.
+- Willy has difficulty driving through doors when driving autonomously. This is caused
+by Willy being quite wide and limitations in the software for autonomous driving.
+- The ultrasonic sensors have a lot of blind spots. Since the LIDAR can't scan the back
+of Willy, the ultrasonic sensors are the only sensors controlling the back of Willy.
+When Willy is driving backwards, this can cause problems.
+
+=== Design
+- Because of the width of Willy with garbage bins attached to the side, it is impossible
+to go through a door without detaching the bins, including the detachable buffers with
+ultrasonic sensors in it.
+
+NOTE: garbage bins are no longer attached.
+
+=== Software
+- The motor controller is a device that is used to control the cmd_vel topic created by the
+ROS navigation stack. The ROS navigation stack published geometry::Twist messages 
+- ROS is complicated and difficult to learn. But if everything is set up right, ROS makes it really easy 
+to communicate between your hardware. 
+- If you want to create files to start multiple projects? Do not use bash files. ROS can't handle bash files properly.
+use ROS launch files instead.
+- The making of the DrivingController was a complex situation. That is because of the fact every ROS node has only one ROS nodehandler.
+To make it possible to subscribe and advertise everywhere in the DrivingWilly code, we must send the nodehandler to every
+sub-controller by using pointers. This request a detailed knowledge of C++ and ROS.
+- The setup of the ROS navigation stack is difficult because of the fact that every robot is different.
+A lot of components needs to be set up on your own. As example the move_base, the transformations and rotations
+and the cmd_vel topic. 
+
+=== Hardware
+- The current batteries should be powerful enough to power the current Willy.
+- The 230 volt touch-screen in combination with the power converter is replaced by a 19v display.
+- The brakes are not easy to deploy. That's because the levers on the side of willy are too loose
+to deploy the brake. We can't tight them because the screw is malformed.
+- The GPS sensor and compass only work outside and are controlled using the GPSController.
+- The kinect cannot be used outside. The IR camera can't handle the bright sunlight.
+
+
+== Navigation
+- Move_base as of this moment is not aware of the shape of the robot. This results in issues where the robot thinks it can pass between objects or rotate while in reality it can't. It advisable to make move_base aware of the shape of the robot.
+- The global planner has not been tuned yet. As of this moment it tries to create a route which is very close to the walls because it wants the fastest route. It would be better for the robot to be driving in the middle of a hallway then hug the wall. The global planner als makes very sharp corners which the robot can't handle very well. A custom planner or tweaking the standard planner can help a lot.
+- The the default default planner which is currently in optimized for a robot with powered rear wheels and a steering front wheels like a car. However willy has two powered wheels which steer using differential power and two swivel wheels.
+
+=== Social interaction
+- The ambient noise can make it hard to speak with Willy. We used the mute function on the microphone provided with Willy. 
+- The speech of Willy can be rather robotic. 

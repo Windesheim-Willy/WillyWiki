@@ -1,7 +1,0 @@
-include::../Header.adoc[]
-
-include::GIT.adoc[]
-
-include::Ubuntu.adoc[]
-
-include::Wiki.adoc[]
