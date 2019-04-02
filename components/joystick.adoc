@@ -10,4 +10,4 @@ https://github.com/Windesheim-Willy/joystick[Windesheim-Willy/joystick, role="ex
 ====
 
 === Prerequisites
-The Laptop requires the device */dev/input/js0* to be connected to the host. In most cases a knockoff PS3 controller or Xbox controller wil do the trick. The controller requires to have _select_ button to be pressed when controlling Willy with the right analog stick. This component uses the default settings for teleop twist joy package, which may require a bit practice to maneuver through the building.
+The Laptop requires the device */dev/input/js0* to be connected to the host. In most cases a knock-off PS3 controller or Xbox controller will do the trick. The controller requires to have the _select_ button be pressed when controlling Willy with the left analogue stick. This component uses the default settings for _teleop_ twist joy package, which may require a bit practice to maneuver through the building.

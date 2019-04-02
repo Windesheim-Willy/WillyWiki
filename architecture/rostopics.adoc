@@ -1,7 +1,7 @@
 include::../Header.adoc[]
 
 == ROS topics
-This are the topics at the ROS master of Willy. There are several communication protocols defined in ROS, but in Willy only topics are used. The topics are shown in the next table.
+These are the topics at the ROS master of Willy. There are several communication protocols defined in ROS, but in Willy only topics are used. The topics are shown in the next table.
 
 [cols=",,,,,",options="header",]
 |===============================================
@@ -11,7 +11,7 @@ a|
 - 1 = healthy
 - 2 = non-critical issue
 - 3 = critical issue
-|/will/health_reason|If Willy is not healthy, the reason for that is published in clear text here|All nodes|All nodes|String|Clear text
+|/willy/health_reason|If Willy is not healthy, the reason for that is published in clear text here|All nodes|All nodes|String|Clear text
 |/willy/activity|What is Willy doing?|Brain SI|All nodes|Int32
 a|
 - 1 = cruising

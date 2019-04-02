@@ -1,8 +1,8 @@
 include::../Header.adoc[]
 
 == Speech
-The Speech topic describes the ability of Willy to audily communicate with human beings. 
-It is part of the social interaction, but due to the necessity of the variious components it seemed
+The Speech topic describes the ability of Willy to audibly communicate with human beings. 
+It is part of the social interaction, but due to the necessity of the various components it seemed
 best to describe it as a separate topic in this WiKi.
 
 === Repository
@@ -58,9 +58,9 @@ The settings.xml file contains the various settings to be used by the Say and Ob
 --- 
 
 ===== Say.py
-This script is the ROS topic on which the text to be spoken is placed. The text is accepted as a string and forwarded to google for processing. The returned mp3 file is being saved in the drop folder for further processing.
+This script is the ROS topic on which the text to be spoken is placed. The text is accepted as a string and forwarded to Google for processing. The returned mp3 file is saved in the drop folder for further processing.
 
 ---
 ===== Observer.py
-This script is, as the name indicates, the observer of the drop folder. Upon start it will delete all files from the drop folder. After that it will pickup each .mp3 file as it is placed and play it accordingly. The volume can be set in the settings.xml file as mentioned earlier.
+This script is, as the name indicates, the observer of the drop folder. Upon start it will delete all files from the drop folder. After that it will pick up each .mp3 file as it is placed and play it accordingly. The volume can be set in the settings.xml file as mentioned earlier.
 After the file has been played it will be deleted from the folder.

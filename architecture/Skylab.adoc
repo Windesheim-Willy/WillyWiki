@@ -2,13 +2,13 @@ include::../Header.adoc[]
 
 == Skylab Architecture
 
-=== Standpoints
+=== Principles
 
-The Skylab architecture is design with a set of standpoints just as the hardware and software architecture.
+The Skylab architecture is design with a set of principles just as the hardware and software architecture.
  
-* Skylab can give limited resources to a node, therefore modulairity is essential. All solutions in Skylab should be built with scale out possibility in mind.
-* Skylab is the place for all not vital functions of Willy.
-* Skylab is seen as a redundant environment with high enough up-time. There is no need for dual datacenter architecture.
+* Skylab can give limited resources to a node, therefore modularity is essential. All solutions in Skylab should be built with the possibility of upscaling in mind.
+* Skylab is the place for all non-vital functions of Willy.
+* Skylab is seen as a redundant environment with high enough up-time. There is no need for a dual datacenter architecture.
 * Variations of OS software is possible as long as topic communication is possible.
 * Variations of ROS software is possible as long as topic communication is possible.
 * Simultaneous development is possible.

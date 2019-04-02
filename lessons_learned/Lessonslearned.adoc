@@ -5,11 +5,11 @@ IMPORTANT: This pages needs to be up to date. 9-1-2019 latest updated.
 
 == Lessons Learned
 
-This page contains a list of lessons we learned during the development of Willy during 2018 semester. 
+This page contains a list of lessons we learned during the development of Willy during the 2018 semesters. 
 
 === Driving
 - It is quite hard to deploy and undeploy the brakes.
-- When the battery voltage drows below a certain level, Willy will stop driving at 
+- When the battery voltage drops below a certain level, Willy will stop driving at 
 irregular intervals. This is probably an internal security system. The brakes are
 also deployed causing an abrupt stop.
 - When driving manually, Willy uses characters pressed on the keyboard to move. When 
@@ -26,24 +26,26 @@ When Willy is driving backwards, this can cause problems.
 to go through a door without detaching the bins, including the detachable buffers with
 ultrasonic sensors in it.
 
+NOTE: garbage bins are no longer attached.
+
 === Software
 - The motor controller is a device that is used to control the cmd_vel topic created by the
-ros navigation stack. The ros navigation stack published geometry::Twist messages 
-- ROS is complicated and difficult to learn. But if everything is setup just right, ROS makes it really easy 
+ROS navigation stack. The ROS navigation stack published geometry::Twist messages 
+- ROS is complicated and difficult to learn. But if everything is set up right, ROS makes it really easy 
 to communicate between your hardware. 
 - If you want to create files to start multiple projects? Do not use bash files. ROS can't handle bash files properly.
-use ros launch files instead.
+use ROS launch files instead.
 - The making of the DrivingController was a complex situation. That is because of the fact every ROS node has only one ROS nodehandler.
 To make it possible to subscribe and advertise everywhere in the DrivingWilly code, we must send the nodehandler to every
-subcontroller by using pointers. This request a detailed knowledge of C++ and ROS.
+sub-controller by using pointers. This request a detailed knowledge of C++ and ROS.
 - The setup of the ROS navigation stack is difficult because of the fact that every robot is different.
-A lot of components needs to be setup on your own. As example the move_base, the transformations and rotations
+A lot of components needs to be set up on your own. As example the move_base, the transformations and rotations
 and the cmd_vel topic. 
 
 === Hardware
-- The current batteries should be powerfull enough to power the current Willy.
-- The 230 volt touchscreen in combination with the power converter is replaced by a 19v display.
-- The brakes are not easy to deploy. Thats because the levers on the side of willy are to loose
+- The current batteries should be powerful enough to power the current Willy.
+- The 230 volt touch-screen in combination with the power converter is replaced by a 19v display.
+- The brakes are not easy to deploy. That's because the levers on the side of willy are too loose
 to deploy the brake. We can't tight them because the screw is malformed.
 - The GPS sensor and compass only work outside and are controlled using the GPSController.
 - The kinect cannot be used outside. The IR camera can't handle the bright sunlight.

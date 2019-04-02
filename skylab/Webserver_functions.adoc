@@ -4,9 +4,9 @@ include::../Header.adoc[]
 
 The webserver is the central information and management point of Willy.
 
-The webserver is situated in Skylab and is connected to Willy by the VPN connection between Sylab and Willy. The Webserver is installed on Ubunto 16.04 LTS and additionally installed with LAMP (https://windesheim-willy.github.io/WillyWiki/skylab/Webserver.html).
+The webserver is situated in Skylab and is connected to Willy by the VPN connection between Skylab and Willy. The Webserver is installed on Ubunto 16.04 LTS and additionally installed with LAMP (https://windesheim-willy.github.io/WillyWiki/skylab/Webserver.html).
 
-The main functions of the webserver are dived in:
+The main functions of the webserver are divided in:
 
 * Topics
 * Enquete
@@ -16,8 +16,8 @@ The main functions of the webserver are dived in:
 
 === Topics
 
-The first item Topics gives access to the saved content of several Topics. The script make_web_oage.php (https://github.com/Windesheim-Willy/Skylab/blob/master/webserver/make_web_page.php) is the central used script. Calling this script with the wanted tabel constructs the complete page.
-The second function on the Topics page is the display of graphical representation of Topic contents. The webserver works together with the Processor node wich constantly updates the graphical representation so all graphics are near-realtime up-to-date.
+The first item Topics gives access to the saved content of several Topics. The script make_web_oage.php (https://github.com/Windesheim-Willy/Skylab/blob/master/webserver/make_web_page.php) is the central used script. Calling this script with the wanted table constructs the complete page.
+The second function on the Topics page is the display of graphical representation of Topic contents. The webserver works together with the Processor node which constantly updates the graphical representation so all graphics are near-realtime up-to-date.
 
 === Survey
 
