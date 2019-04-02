@@ -2,7 +2,7 @@ include::../Header.adoc[]
 
 == Human detection
 
-This component with a webcam gives Willy the ability to recognize upper human body parts with a OpenCV Haar Cascade. The algorithm tracks the outputted rectangles from the Haar Cascade output and counts the frames it has been seen and missed. Based on those figures it calculates an accuracy. When the accuracy drops below 30% or the rectangle has not been seen for 50 frames (that’s about 2 seconds) it will be removed from the tracking. Due to the specific output of the human_detection it has its own ROS message type with parameters. 
+This component with a web cam gives Willy the ability to recognize upper human body parts with a OpenCV Haar Cascade. The algorithm tracks the outputted rectangles from the Haar Cascade output and counts the frames it has been seen and missed. Based on those figures it calculates an accuracy. When the accuracy drops below 30% or the rectangle has not been seen for 50 frames (that’s about 2 seconds) it will be removed from the tracking. Due to the specific output of the human_detection it has its own ROS message type with parameters. 
 
 === Repository
 ====
