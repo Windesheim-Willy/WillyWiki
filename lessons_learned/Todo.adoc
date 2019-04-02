@@ -8,8 +8,8 @@ include::../Header.adoc[]
 |===
 |Description|BIM|SE|IDS-ESA
 
-|Collecting more sensorinformation. Ie. when Willy drives over a bump this information is collected to analyse if the floor needs maintaince. | X | X | 
-|Create multiple smaller Willies that collaborate and drive around on diffrent locations.| X | X | 
+|Collecting more sensor information, i.e. when Willy drives over a bump this information is collected to analyse if the floor needs maintenance. | X | X | 
+|Create multiple smaller Willies that collaborate and drive around on different locations.| X | X | 
 |DataScience: Collect more data  to analyse the input of all topic information. Use more machine learning. | X | X | 
 |Financial planning: Develop more financial resources like sponsorship. | X | | 
 |Develop financial ownership and responsibility| X | | 

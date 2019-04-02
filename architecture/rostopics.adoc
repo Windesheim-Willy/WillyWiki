@@ -1,7 +1,8 @@
 include::../Header.adoc[]
 
 == ROS topics
-These are the topics at the ROS master of Willy. There are several communication protocols defined in ROS, but in Willy only topics are used. The topics are shown in the next table.
+
+These are the topics at the ROS master of Willy. There are several communication protocols defined in ROS, but in Willy only the topics system is used. The topics are shown in the next table.
 
 [cols=",,,,,",options="header",]
 |===============================================

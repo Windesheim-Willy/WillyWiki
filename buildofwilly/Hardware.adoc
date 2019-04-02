@@ -3,7 +3,7 @@ include::../Header.adoc[]
 == Hardware
 
 === Overview
-A simple overview of all the hardware in Willy is made in the
+A simple overview of all the hardware in Willy is given in the
 following scheme:
 
 image:media/connections.png[image]
@@ -12,8 +12,7 @@ image:media/connections.png[image]
 This chapter contains all the components with explanation.
 
 ==== Laptop
-This is the dedicated computer for running the ROS Server. Al the calculational
-work will be done on this laptop. Therefore, we chose for a computer with some
+This is the dedicated computer for running the ROS Server. All the heavy calculations, such as route-planning, will be done on this laptop. Therefore, we chose for a computer with some
 calculation power as well as enough RAM.
 
 [cols=",",options="header",]
