@@ -20,6 +20,13 @@ These are built into a message, and sent to the master.
 
 If there is an error in the data from the arduino, such as missed data or un-needed data, the entire message is binned and the input is cleared.
 
+==== Quaternions
+
+The MPU9250 uses a complex mathematical system of tracking orientation called "quaternions".
+These are a method of storing current rotation in a 3-d space, while avoiding the issue of Gimbal lock found in Euler angles.
+While these are complex, they are the preferred method of tracking rotation according to link:https://www.ros.org/reps/rep-0103.html[ROS rep 103].
+A comprehensive tutorial on the mathematics behind quaternions can be found link:https://www.3dgep.com/understanding-quaternions/[here].
+
 
 === Wire
 
