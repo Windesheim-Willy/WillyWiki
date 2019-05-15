@@ -9,6 +9,19 @@ The motor controller listens to the drive topic from ROS, reads out the wheel en
 https://github.com/Windesheim-Willy/motor_controller[Windesheim-Willy/motor_controller, role="external", window="_blank"]
 ====
 
+=== Starting the motor controller
+Normally the motor controller is started automatically when the command below is executed:
+[source,shell]
+----
+startwilly
+----
+To start the motor controller manually, execute this command:
+[source,shell]
+----
+motorcon
+----
+When the motor controller is started, the emergency button has to be pressed and reset otherwise no action will be seen.
+
 === Main program (MotorTest.ino)
 The main program communicates with ROS, reads out encoders (by using encoder.h) and controls the motors with a calculated output (from controlloop.h). Important functions are briefly explained below.
 
