@@ -13,7 +13,7 @@ https://github.com/Windesheim-Willy/motor_controller[Windesheim-Willy/motor_cont
 The main program communicates with ROS, reads out encoders (by using encoder.h) and controls the motors with a calculated output (from controlloop.h). Important functions are briefly explained below.
 
 ==== Arduino reading /cmd_vel messages from ROS
-The geometry twist messages broadcast by ROS constist of two variables, turn and run. Turn will be the turn speed in rad/s and drive will be the speed in m/s. The function reading these messages can be seen below.
+The geometry twist messages broadcast by ROS consist of two variables, turn and run. Turn will be the turn speed in rad/s and run will be the drive speed in m/s. The function reading these messages can be seen below.
 
 [source,cpp]
 ----
@@ -58,7 +58,7 @@ void SendToMotor(int Setdrive, int Setturn)
 ----
 
 ==== Broadcasting to the emergency channel
-Every iteration within the critical loop of the state of the emergency button will be broadcast. The motor controller will interrupt the circuits on a hardware level when the button is pushed. But in order to prevent windup within the PID controller the ROS messages is spoofed by 0. This is done by the function below.
+Every iteration within the critical loop of the state of the emergency button will be broadcast. The motor controller will interrupt the circuits on a hardware level when the button is pushed. But in order to prevent wind-up within the PID controller the ROS messages is spoofed by zero. This is done by the function below.
 
 [source,cpp]
 ----
@@ -72,13 +72,13 @@ void Stop()
 ----
 
 === Encoders
-The encoders are attached on both driven front wheels. Encoders.h is included in the main program of the motor controller and calculates the speed of the wheel in m/s. The output of the encoders correspondens with the figure below. The code written to decode these outputs to stable speed is quite complex and uses various functions. Therefore we advise to read tech design to get a better understanding if needed.
+The encoders are attached on both driven front wheels. Encoders.h is included in the main program of the motor controller and calculates the speed of the wheel in m/s. The output of the encoders correspondents with the figure below. The code written to decode these outputs to stable speed is quite complex and uses various functions. Therefore we advise to read tech design to get a better understanding if needed.
 
 image::media/QuadruatureEncoderOutput.png[]
 
 
 === Controlloop
-The main controlloop constist of two PID controllers (TurnController and DriveController). The reference speed (irun and iturn) is compared with the actual speed and the difference (error) is send to the PID controllers. This is implemented in the function below.
+The main control loop consist of two PID controllers (TurnController and DriveController). The reference speed (irun and iturn) is compared with the actual speed and the difference (error) is send to the PID controllers. This is implemented in the function below.
 
 [source,cpp]
 ----
