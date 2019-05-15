@@ -1,7 +1,7 @@
 include::../Header.adoc[]
 
 == Sonar
-As the Lidar is not able to detect glass Willy is provided with 8 sonar sensors. The used sensors are HC-SR04 ultrasonic sensor, and they are mounted on 3D printed ball joints. 
+As the Lidar is not able to detect glass Willy is provided with 8 sonar sensors. The used sensors are HC-SR04 ultrasonic sensor. These sensors are mounted on 3D printed ball joints, as shown in the picture below.
 
 image:media/SonarSensorAssembly.PNG[]
 
@@ -12,7 +12,7 @@ https://github.com/Windesheim-Willy/sonar[Windesheim-Willy/sonar, role="external
 
 === Electrical setup
 
-The sensors are connected to an Arduino Uno with one continuos wiring harnass, provided with connectors. The power and trigger wires are looped and the echo signal is seperated as can be found in the schematic below:
+The sensors are connected to an Arduino Uno with one continuous wiring harness, provided with connectors. The power and trigger wires are looped and the echo signal is separated as can be found in the schematic below:
 
 image:media/SonarDiagram.PNG[]
 
@@ -23,15 +23,28 @@ image:media/SonarDiagram.PNG[]
 The code on the Arduino which reads out the sonars is pretty straightforward. It will calculate the distance and limit the value to 2 meters. The data is read out and send via serial sequentially a.s.a.p. 
 
 ==== PI
-The sonars will start automatic when the PI is running. The PI will tag the sensors (left, right etc.) and publish the data to ROS. The sonar node can be started manually by going into the root of the sonar repo:
+The PI will tag the sensors (left, right etc.) and publish the data to ROS. 
+The Pi will not start automatically. Therefore the following steps have to be taken:
 
+On willy's laptop:
 [source,shell]
 ----
-./START start
+ssh ubuntu@192.168.0.13
+password: ubuntu
+----
+Make sure ROS master runs on the laptop:
+[source,shell]
+----
+startwilly
+----
+Then this command will start the Pi:
+[source,shell]
+----
+./start_sensornode.sh
 ----
 
 ==== RVIZ
-RVIZ will visualise the data of the sensors and represent cones for each sensor.
+RVIZ will visualise the data of the sensors and represent the locations and distance for each sensor.
 
 === Notes
 
