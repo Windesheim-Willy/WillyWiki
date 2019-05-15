@@ -65,4 +65,4 @@ In order to use this map a saved copy is needed. To save the map that is on the 
 rosrun map_server map_saver -f {name of save file}
 ----
 
-It has proven to be useful to test the software in a VM when access to the hardware is limited. To do so run the 'start-sim-navstack.sh' or 'start-sim-mapping.sh' instead of the commands listed above. These commands will start a replay of a rosbag containing lidar data instread of the real thing. They also set a parameter which tells the nodes to accept out of date timestamps which are required to function in a simulated environment
+It has proven to be useful to test the software in a VM when access to the hardware is limited. To do so run the 'start-sim-navstack.sh' or 'start-sim-mapping.sh' instead of the commands listed above. These commands will start a replay of a rosbag containing lidar data instead of the real thing. They also set a parameter which tells the nodes to accept out of date timestamps which are required to function in a simulated environment

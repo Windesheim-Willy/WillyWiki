@@ -59,3 +59,4 @@ The view cone of the sensor is very limited. It will only detect a obstacle if t
 
 ==== Minimum range
 The minimum range is 5 cm. If a object gets closer the Arduino will report 2m distance. 
+
