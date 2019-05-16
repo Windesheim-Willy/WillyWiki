@@ -1,7 +1,7 @@
 include::../Header.adoc[]
 
 == SI node
-The SI node contains all the components for social interaction of Willy.
+The Social Interaction (SI) node contains all the components for social interaction with Willy, either via speech or imagery.
 
 === Repository
 ====

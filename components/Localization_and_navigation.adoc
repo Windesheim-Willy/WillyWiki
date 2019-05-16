@@ -1,7 +1,7 @@
 include::../Header.adoc[]
 
 == Localization and navigation
-The localization and navigation stack is collection of nodes which process LIDAR data and use it to navigate.
+The localization and navigation stack is a collection of nodes and plug-ins which process LIDAR data among others and use it to navigate on a pre-generated map.
 
 === Repository
 https://github.com/Windesheim-Willy/navigation_stack[Windesheim-Willy/navigation_stack, role="external", window="_blank"]
@@ -42,16 +42,17 @@ However, this process is not always perfect. It has trouble seeing transparent a
 The 'hector_mapping' node is not great at erasing objects from the map. So it is best to map a area when there are no moving objects like humans.
 
 === How to run?
-To run the localization and navigation stack you need to have a instance of ROS master and the LIDAR node running
+To run the localization and navigation stack you need to have an instance of the ROS Master and the LIDAR node running. If you have used the command alias `startwilly`, the navigation stack is run automatically along with the start of the ROS Master.
 
-To start autonomous navigation you need to use the 'start-live-navstack.sh'
+To start autonomous navigation manually, you need to invoke the start-up script by hand:
 
 [source,shell]
 ----
+cd ~/Documents/willy/components/navigation_stack/
 ./start-live-navstack.sh
 ----
 
-The navigation stack requires a LIDAR map of the environment it must navigate in. This map can be built by manually moving the robot using the keyboard node and running the mapping process. The mapping process can be started with the following command
+The navigation stack requires a LIDAR-generated map of the environment it must navigate in. This map can be built by manually moving the robot using the keyboard node and running the mapping process. The mapping process can be started with the following command
 
 [source,shell]
 ----

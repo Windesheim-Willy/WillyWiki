@@ -1,7 +1,7 @@
 include::../Header.adoc[]
 
 == Motor controller
-The motor controller listens to the drive topic and controls the motors of Willy.
+The motor controller listens to the "command velocity" topic and controls the motors of Willy.
 
 === Repository
 ====
@@ -33,3 +33,5 @@ All the dependencies (headers from ros) are copied from the Kinetic Kame release
 
 When building for the first the Platform.io will add some files in the .vscode directory that can be ignored. Its not recommended to add them to GiT. The files have hard-coded paths containing the username and are ignored. 
 To flash the Arduino simply press Upload in the Plaform.io extension. 
+
+Alternatively, the Arduino IDE could be used but mileage may vary.
