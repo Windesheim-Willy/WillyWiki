@@ -58,7 +58,7 @@ An alternative text editor that is built within Linux itself, it is slightly mor
 |htop  |-  |
 An improved version of the built in `top` task monitor. The F1-10 buttons have functions listed below on the screen, and the arrow keys lets you navigate the list of tasks. Hopefully, you do not need to use this unless a process needs to be killed.  
 |ping  |-  | 
-Ping lets you test whether or not a node is running or if you're connected to the network. For best results, you use an IP Address e.g. `192.168.0.1` for WTR's Router Node.
+Ping lets you test whether or not a node is running or if you're connected to the network. For best results, you use an IP Address, such as the one for WTR's Router Node.
 |dmesg  |-  |
 In the event that a module on the sensor node calls the wrong arduino, this command will show a system log file that can tell you on which "port" an arduino is connected. such as `/dev/ttyACM0`. Tip is to reconnect the necessary arduino when you do so, so that it is shown more recently in the `dmesg` output.
 |====================
