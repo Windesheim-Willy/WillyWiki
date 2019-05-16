@@ -1,10 +1,120 @@
 include::../Header.adoc[]
 
 == Development Guide
+The software components written for Willy The Robot are diverse but kept to three major languages. These are Python, C++ and Javascript. The following guide shall explain general instructions for developing on either platform within the project.
 
-=== Prerequisite
+=== Prerequisites
 
-* Basic knowlegde of NodeJs, Git and ROS
+==== General
+Knowledge of the Publisher/Subscriber model within ROS is required, as it will simplify the process of reading and sending messages from your new script to the various components such as the navigation stack.
+
+You will also need a sufficient coding IDE or text editor. Any one should suffice.
+A Github client (eg. SourceTree or Gitkraken) is also necessary in order to "push" and "pull" the existing code from the Github Repository.
+
+Additionally, when troubleshooting code on any of the Raspberry Pi nodes, it might be helpful to look into using `nano` on the Pi directly, if for instance you need to examine the code or make quick edits. More information on this can be found in the section detailing Linux.
+
+==== C++ Development
+C++ scripts, nodes and/or applications are built using the Catkin environment within ROS. You can find more information within the tutorials upon the ROS wiki.
+
+In most cases, a catkin packages needs to be created via the following commands, this must be done within the catkin workspace;
+[source,]
+----
+cd ~/catkin_ws/
+catkin_create_pkg <your new package>
+cd <your new package>
+----
+
+To compile the packages within the workspace, it is recommended to run the following commands in order. The `-j4` option tells the compiler how many CPU cores can be used. By default, this is set to 2, but the Raspberry Pi 3b+ has four cores available to utilize.
+[source,]
+----
+catkin_make clean
+catkin_make -j4
+catkin_make install
+----
+
+An alias for this process is available, simply type the command: `catbmi` (Build, Make, Install) instead, and the above list will be run automatically.
+
+Important to note: Compilation on a Raspberry Pi can often result in the OS running out of (virtual) memory. To mitigate this, it is urged to use a spare 4GB or larger USB drive as swap space. The following commands will let you set this up, but do note that administrative privileges are required and that the USB drive could experience strain when being used as a makeshift RAM stick.
+
+First, connect the USB drive to the Raspberry Pi and use `fdisk` to view all connected storage drives.
+[source,bash]
+----
+sudo fdisk -l
+----
+
+The USB drive will appear as `\dev\sda` or derivative below the list:
+[source,bash]
+----
+Disk /dev/sda: 7.5 GiB, 8068792320 bytes, 15759360 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x00000001
+
+Device     Boot   Start      End Sectors  Size Id Type
+/dev/sda1          2048  7372799 7370752  3.5G  c W95 FAT32 (LBA)
+/dev/sda2       7372800 15757311 8384512    4G  c W95 FAT32 (LBA)
+----
+
+Note that this USB drive is divided in two partitions, the first is usable for transferring files with, the second one is to be used as swap space and would therefore not be usable on regular PC's.
+
+
+To initiate a partition as swap space, use the following command:
+
+IMPORTANT: Any disk or partition manipulation command will risk losing all files on the partition or drive itself, exercise caution and make a back-up of any important files off the drive.
+
+[source,bash]
+----
+sudo mkswap /dev/sda2 
+----
+
+Then, to initiate the newly created swap space, turn it on:
+
+[source,bash]
+----
+sudo swapon /dev/sda2
+----
+
+NOTE: This setting does not persist through reboots, ergo; you will have to use `swapon` every time the Raspberry Pi has been turned off or restarted.
+
+Using the process monitor `htop`, we can see if the swap space has been successfully added:
+
+[source,bash]
+----
+  1  [                          0.0%]   Tasks: 60, 56 thr; 1 running
+  2  [                          0.0%]   Load average: 0.00 0.00 0.03
+  3  [||                        4.5%]   Uptime: 00:19:06
+  4  [                          0.0%]
+  Mem[|||||||||||||||      155M/876M]
+  Swp[                      0K/4.00G]   <-- That's our swap drive!
+
+----
+
+IMPORTANT: Once a swap partition has been activated, 
+DO NOT DISCONNECT THE USB DRIVE. 
+If the USB drive is disconnected before turning swap off, the system will become inoperable until it is rebooted.
+
+Once you're finished with compiling your packages, you can use `sudo swapoff /dev/sda2` to safely disconnect the USB drive.
+
+==== Python Development
+The benefit of Python is that it lets you write and integrate small scripts quicker by skipping the need to compile packages, but it is still recommended to do so if you want to integrate the script as a node within ROS.
+
+Running python scripts could simply be done by either navigating to the containing directory or to name the path immediately:
+[source,bash]
+----
+# Running from the directory
+cd ~/Documents/willy/demo_script
+python demo_script.py
+
+# Running from the path
+python ~/Documents/willy/demo_script/demo_script.py
+----
+
+==== Social Interaction Node
+The following instructions are relevant to development on/for the Social Interaction Node.
+
+* You will need basic knowledge of Node.js, Git and ROS
 
 * Install Git & Editor +
 https://code.visualstudio.com/
