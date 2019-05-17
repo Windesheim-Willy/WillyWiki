@@ -27,6 +27,21 @@ The 'laser_scan_matcher' node uses the filtered LIDAR data to create odometry da
 
 This position is then fed into the 'move_base' node which uses the LIDAR data and map to create a maps of obstacles called costmaps. It then uses the position from 'AMCL', the costmaps and a goal to generate a path and start giving commands to the robot to follow that path as closely as possible  
 
+==== Costmaps
+RViz shows us three total maps, of which two are the Global costmap and the Local costmap. A small example the view of these maps in RViz is as following:
+
+image::assets/costmaps_view.png[]
+
+The gray areas are the pre-generated map of the fifth floor in the T-building of Windesheim. Light gray equals areas where Willy can move freely, Dark gray equals an obstacle or wall.
+
+The Global costmap is seen as the red/cyan blotches around certain walls and obstacles. The local costmap is the white cube around the robot and with the Global costmap calculates an inflated distance from obstacles. The cones of the ultrasonic sensors will mark obstacles it detects as small black dots/lines, enough to be detected as an obstacle. The LIDAR marks obstacles and walls using the distance its lasers measure, visualized as red squares, upon which the local costmap will inflate the obstacle's distance by about 10 centimeters.
+
+The "footprint" of the robot, visible as the green rectangle in the center, indicates its location and is used in calculating whether or not WTR is in an obstacle or not. It is a key for obstacle detection to work using the following rules:
+
+* If the green rectangle touches a red dot, the robot will assume it has hit an obstacle
+* If the green rectangle is inside a black area, it will recognize that it's close to an obstacle, slow down and try to avoid the obstacle to prevent collision.
+* If the centerpoint of the robot (base_link) touches a black area, the robot will stop as it assumes it has hit an obstacle.
+
 ==== Mapping
 
 .Data flow while mapping
