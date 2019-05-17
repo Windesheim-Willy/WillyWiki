@@ -87,7 +87,7 @@ void Stop()
 === Encoders
 The encoders are attached to both front wheels. Encoders.h is included in the main program of the motor controller and calculates the speed of the wheel in m/s. The output of the encoders correspondents with the figure below. The code written to decode these outputs to stable speed is quite complex and uses various functions. Therefore we advise to read tech design to get a better understanding if needed.
 
-image::media/QuadruatureEncoderOutput.png[]
+image::assets/QuadruatureEncoderOutput.png[]
 
 
 === Controlloop
@@ -123,7 +123,7 @@ The main control loop consist of two PID controllers (TurnController and DriveCo
 === PID controller
 An PID controller chosen to control the turn and drive speed of Willy. The animated gif below explains the basic function of the three different variables.
 
-image::media/PID_Compensation_Animated.gif[]
+image::assets/PID_Compensation_Animated.gif[]
 
 ==== Implementation
 These variables are set on start by using the initialize function (constructor) and have been tuned to make willy drive smoothly. Below the code for the PID variables construction and PID calculation can be found. The math on these calculations seems easy but the theory is rather complex, we advise to get a basic understanding, before starting to tune or even change our implementation as currently the robot is slow but very stable. For more information we refer you to the link below.
@@ -171,4 +171,4 @@ https://en.wikipedia.org/wiki/PID_controller
 In order to get a better understanding of what is happening and to ease tuning a special program is written. This program was used on a seperated laptop and connects via serial to the Arduino. The program constist of basic graphs representing the input, error and output signals. 
 A separate Serial to USB converter is needed to communicate with the Arduino Mega, since the USB port needs to be connected to the laptop.
 
-image::media/PIDViewer.jpg[]
+image::assets/PIDViewer.jpg[]
