@@ -6,26 +6,26 @@ include::../Header.adoc[]
 On Willy the Robot, the four Raspberry Pi's and the laptop use Linux as their operating system. This is an alternative operating system with an emphasis on using the Command Line Interface (CLI) besides the graphical environment. On the Raspberry Pi's, the CLI is your only interface most of the time. 
 
 == Remote access via the Secure Shell protocol (SSH)
-The Raspberry Pi's are all mounted in a way that connecting a display is possible, but peripherals as a keyboard might be inconvenient. It is thus recommended to use an SSH client from the laptop or your own. 
+The Raspberry Pi's are all mounted in a way that connecting a display is possible, but peripherals as a keyboard might be inconvenient.
 
-Using SSH can be done via the terminal on the laptop mounted on WTR, or via the application PuTTY on Windows on your own laptop.
+Using SSH can be done via the terminal on the laptop mounted on WTR, or via the application PuTTY on Windows on your own PC.
 
-NOTE: Using your own laptop needs you to be connected to WTR's Network via its Wi-Fi access point or an ethernet cable. (Be cautious when moving the robot if you do.)
+NOTE: Using your own PC requires you to be connected to WTR's Network via its Wi-Fi access point or an ethernet cable. (Be cautious when moving the robot if you do.)
 
-Connecting to a remote raspberry pi or laptop can be done using this command:
+Connecting to a remote raspberry pi or laptop can be done by invoking the SSH client:
 [source,bash]
 ----
 ssh <username>@<ip address or hostname>
 ----
 You will be prompted for a password, after entering that you will be logged in to the remote server. 
 
-If you wish to do this via your own laptop, connect to the network of WTR, then use PuTTY to connect to any remote raspberry pi or laptop using the same credentials.
+If you wish to do this via your own PC, connect to the network of WTR, then use any SSH client to connect to the desired remote raspberry pi or laptop using the same credentials.
 
 == Commonly used commands
 
 The following commands might often be used within Linux, as an example, the "sensor node" raspberry pi will be used.
 
-You can see the current folder you are in by the tooltip before your cursor. Example: `ubuntu@sensornode:~/catkin_ws/$` shows that you're within the `catkin_ws` directory.
+You can see the current folder you are in by the tooltip before your cursor. For instance: `ubuntu@sensornode:~/catkin_ws/$` shows that you're within the `catkin_ws` directory.
 
 NOTE: The `~` within a path resembles the home directory of the user. By default, this is `/home/<username>`
 
@@ -42,7 +42,7 @@ ubuntu@sensornode:~/catkin_ws/src/demo_package/$ nano demo_script.cpp
 
 The following table will list several commonly used commands or applications. Some of them might need elevation (done by typing `sudo` before the command) to be allowed to execute or edit some files.
 
-TIP: If you are told permission is denied after entering the command already, using `sudo !!` will rerun that command with elevated privileges. This saves time spent typing that command again.
+TIP: If you are told permission is denied after entering the command already, using `sudo !!` will rerun that command with elevated privileges.
 
 [width="100%",cols="2,1,10",options="header,footer"]
 |====================
@@ -64,7 +64,7 @@ In the event that a module on the sensor node calls the wrong arduino, this comm
 |====================
 
 === Command Aliases
-Certain commands often wind up to be too long to repeat every so often. For this, the command line interface allows you to configure aliases for frequently used commands.
+Certain commands often wind up to be too long to repeat every so often. For this, the command line interface allows you to configure aliases for these frequently used commands.
 
 Aliases are stored within a hidden file in the user's home folder. It is usually called `.bash_aliases`. To edit this, change to the home directory using `cd ~` and then open the editor of choice: `nano .bash_aliases` 
 

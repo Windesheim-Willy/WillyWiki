@@ -8,15 +8,12 @@ The software components written for Willy The Robot are diverse but kept to thre
 ==== General
 Knowledge of the Publisher/Subscriber model within ROS is required, as it will simplify the process of reading and sending messages from your new script to the various components such as the navigation stack.
 
-You will also need a sufficient coding IDE or text editor. Any one should suffice.
-A Github client (eg. SourceTree or Gitkraken) is also necessary in order to "push" and "pull" the existing code from the Github Repository.
-
-Additionally, when troubleshooting code on any of the Raspberry Pi nodes, it might be helpful to look into using `nano` on the Pi directly, if for instance you need to examine the code or make quick edits. More information on this can be found in the section detailing Linux.
+You will also need a coding IDE or (text) editor. Git + a client interface (eg. SourceTree or Gitkraken) is necessary in order to "push" and "pull" the existing code from the Github Repository.
 
 ==== C++ Development
 C++ scripts, nodes and/or applications are built using the Catkin environment within ROS. You can find more information within the tutorials upon the ROS wiki.
 
-In most cases, a catkin packages needs to be created via the following commands, this must be done within the catkin workspace;
+Generally, you will start with developing a node in a catkin package, which needs to be created via the following commands, this must be done within the catkin workspace;
 [source,]
 ----
 cd ~/catkin_ws/
@@ -32,7 +29,7 @@ catkin_make -j4
 catkin_make install
 ----
 
-An alias for this process is available, simply type the command: `catbmi` (Build, Make, Install) instead, and the above list will be run automatically.
+An alias for this process is available, type the command: `catbmi` (Build, Make, Install) and the above list will be run automatically in order.
 
 Important to note: Compilation on a Raspberry Pi can often result in the OS running out of (virtual) memory. To mitigate this, it is urged to use a spare 4GB or larger USB drive as swap space. The following commands will let you set this up, but do note that administrative privileges are required and that the USB drive could experience strain when being used as a makeshift RAM stick.
 
@@ -58,7 +55,6 @@ Device     Boot   Start      End Sectors  Size Id Type
 ----
 
 Note that this USB drive is divided in two partitions, the first is usable for transferring files with, the second one is to be used as swap space and would therefore not be usable on regular PC's.
-
 
 To initiate a partition as swap space, use the following command:
 
