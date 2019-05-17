@@ -64,7 +64,7 @@ In the event that a module on the sensor node calls the wrong arduino, this comm
 |====================
 
 === Command Aliases
-You might be wondering: "Do I have to type in all those commands all the time?". Sooner or later those commands will be long enough that you could barely keep track, or you happen to use them enough times that you could do with a faster shortcut. For this, the command line interface allows you to configure aliases for frequently used commands.
+Certain commands often wind up to be too long to repeat every so often. For this, the command line interface allows you to configure aliases for frequently used commands.
 
 Aliases are stored within a hidden file in the user's home folder. It is usually called `.bash_aliases`. To edit this, change to the home directory using `cd ~` and then open the editor of choice: `nano .bash_aliases` 
 
