@@ -23,6 +23,6 @@ NOTE:the fifth iteration seems to be missing. According to the "previous groups"
 
 ==== Sixth Iteration
 During this iteration the focus was on autonomous driving and general structural improvements.
-The plan is to use a set of rotary encoders on the front wheels, as well as using a 9-axes sensor, rather than the accelerometer/gyroscope EMU, which has 6. This would allow for a greater degree of tracking the position/rotation of Willy, and therefore allow more careful control of the motors.
+The plan is to use a set of rotary encoders on the front wheels, as well as using a 9-axis IMU, rather than the accelerometer/gyroscope EMU, which has 6. This would allow for a greater degree of tracking the position/rotation of Willy, and therefore allow more careful control of the motors.
 As a side goal, we took it upon ourselves to correct some of the grammatical and spelling mistakes made within this wiki, as well as a few factual errors regarding the control of Willy.
 

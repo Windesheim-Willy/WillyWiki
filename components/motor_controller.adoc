@@ -1,8 +1,11 @@
 include::../Header.adoc[]
 
 == Motor controller
+
 Willy is based on a mobility scooter. The motor driver was once manually controlled by a joystick unit, but that was replaced by an arduino mega serving as motor controller.
 The motor controller is subscribed to the drive topic from ROS, reads out the wheel encoders, compares them and controls the motors of Willy accordingly. This is explained briefly, for further details please read the hardware design and technological design documents.
+motor controller listens to the "command velocity" topic and controls the motors of Willy.
+
 
 === Repository
 ====
@@ -171,4 +174,11 @@ https://en.wikipedia.org/wiki/PID_controller
 In order to get a better understanding of what is happening and to ease tuning a special program is written. This program was used on a seperated laptop and connects via serial to the Arduino. The program constist of basic graphs representing the input, error and output signals. 
 A separate Serial to USB converter is needed to communicate with the Arduino Mega, since the USB port needs to be connected to the laptop.
 
+
 image::media/PIDViewer.jpg[]
+
+When building for the first the Platform.io will add some files in the .vscode directory that can be ignored. Its not recommended to add them to GiT. The files have hard-coded paths containing the username and are ignored. 
+To flash the Arduino simply press Upload in the Plaform.io extension. 
+
+Alternatively, the Arduino IDE could be used but mileage may vary.
+

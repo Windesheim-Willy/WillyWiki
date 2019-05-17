@@ -2,6 +2,8 @@ include::../Header.adoc[]
 
 == OpenMV
 
+WARNING: This module is no longer used in favour of orientation measurement by IMU and LIDAR.
+
 The OpenMV camera is used for AprilTag scanning. When a AprilTag is scanned, Willy knows where it is on the map.
 
 === Repository

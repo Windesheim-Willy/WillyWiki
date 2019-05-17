@@ -1,38 +1,45 @@
 include::../Header.adoc[]
 
-== Driving of willy
+== Starting and Driving willy
 
 . **Deploy the brakes** +
 Normally a wheelchair has brakes. The brakes of Willy have been removed.
 
 . **Deploy the emergency stop** +
+Doing so will cut off power to the motor controller and deploy the brakes if they aren't already. This will prevent any unexpected acceleration or power surge.
 
 . **Turn the power on** +
-Do it in the following order:
-- Start the OpenWRT PI
-- Start the Notebook
-- Start the Sensor and SI PI.
+Willy has a switchbox in the rear left corner with four switches marked appropriately and must be turned on in this order. Powering the laptop can be done at any time in this process.
 
-. **Undeploy the emergency stop**
+. **Start the ROS Master on the laptop** +
+Once the laptop is powered on, log in to the `willy` account, open a Terminal window and use the alias `startwilly` to run the ROS Master, Motor Controller and Joystick interface at once. Push the glossy center button on the controller and verify that one light is lit up on the front of the controller.
 
-IMPORTANT: By default the *brain* will takeover the control. Make sure to move Willy to a safe place with the contoller first.
+. **Release the emergency stop** +
+Do this once the ROS master has started and RViz is visible. 
 
-=== Stop Willy
+. **Optional: Mark the estimated location of Willy The Robot on the map** +
+Optionally, you can mark Willy's location on the map using the "2D Pose Estimate" button. Scroll to the area on the map where Willy is located, click on the beforementioned button, click and hold on the map where Willy is located, a green arrow will appear indicating the orientation. Drag to the appropriate orientation, then let go.
+
+IMPORTANT: By default the *brain* could take over control. Make sure to move Willy to a safe place with the controller first.
+
+=== Stopping Willy
+To safely shut down Willy, follow these instructions:
 
 . **Deploy the emergency stop** +
 
-. **Shutdown all raspberry PI's from the notebook** +
+. **Safely shutdown all Raspberry Pi's from the notebook** +
 
-.. Open the terminal on the notebook
-
+.. Open the terminal on the notebook and enter the following command:
 
 ----
 sh /opt/willy/components/ansible/shutdown-pi.sh
 ----
 
-Fill in the password of the PI's
+Fill in the password of each Raspberry Pi.
+
+Turning them off via the power switch(es) is not recommended for risk of data/disk corruption.
 
 . **Shutdown the notebook** +
 
-. **Turn of the power** +
+. **Turn off the four switches on the switchbox** +
 

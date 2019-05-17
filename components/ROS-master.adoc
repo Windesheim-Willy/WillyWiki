@@ -1,7 +1,7 @@
 include::../Header.adoc[]
 
 == ROS master
-The ROS master will be used as servicebus between the different nodes. The ROS master node provides naming and registration services to the rest of the nodes in Willy. It tracks publishers and subscribers to topics. The role of the ROS Master is to let the nodes interact with each other without a direct connection.
+The ROS master serves to be the center of communication between the different nodes. The ROS master node provides naming and registration services to the rest of the nodes in Willy. It tracks publishers and subscribers to topics and allows for automatic connections to these topics between nodes. The role of the ROS Master is to let the nodes interact with each other without a direct connection.
 
 === Repository
 ====
@@ -9,6 +9,18 @@ https://github.com/Windesheim-Willy/ROS-master[Windesheim-Willy/ROS-master, role
 ====
 
 === How to run?
+There is an included shell script found within the folder `/home/willy/Documents/willy` called `start-willy.sh`, this will start the ROS Master along with all required plug-ins, components and parameters.
+
+To execute this script, open a terminal window and invoke the script as a command:
+[source,bash]
+----
+cd ~/Documents/willy
+./start-willy.sh
+----
+
+For convenience, a command alias `startwilly` allows this script to be run anywhere within a command-line environment or terminal window.
+
+=== How to run via Docker?
 To run only the ROS master the Docker can be used. The Dockerfile of ROS master is automatically built on Dockerhub.
 
 ====

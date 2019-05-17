@@ -8,9 +8,9 @@ The software architecture needs to be compartmented for development purposes. To
  
 * Each separate function gets a separate repository
 * Each separate function has no dependency to another
-* The GiT proces is applied for every repository
-* Every function is running hardware independent
-* Every function is running OS independent
+* The Git process is applied for every repository
+* Every function is hardware independent
+* Every function is OS independent
 
 
 === Design
@@ -21,8 +21,8 @@ image::media/software-architecture.jpg[]
 
 === ROS Master
 
-A key feature of ROS is the topic communication. Separation of each function in the ROS master, which facilitates the topics, is a key component. Every function communicates according a topic and therefore ROS master functions as a servicebus for each current and future feature. 
+A key feature of ROS is the topic communication. Separation of each function in the ROS master, which facilitates the topics, is a key component. Every function communicates according a topic and therefore ROS master functions as a service bus for each current and future feature. 
 
 [NOTE]
 Designing this architecture and keeping it up to date can be done by importing/editing the xml files in https://www.draw.io/. 
-Draw.io is free of charge to use and requires no client. 
+Draw.io is free of charge to use and requires no client, but any XML editor can be used.
