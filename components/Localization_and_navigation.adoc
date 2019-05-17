@@ -32,9 +32,21 @@ RViz shows us three total maps, of which two are the Global costmap and the Loca
 
 image::assets/costmaps_view.png[]
 
-The gray areas are the pre-generated map of the fifth floor in the T-building of Windesheim. Light gray equals areas where Willy can move freely, Dark gray equals an obstacle or wall.
+The gray areas are the pre-generated map of the fifth floor in the T-building of Windesheim. Light gray areas show where Willy can move freely and dark gray areas equal an obstacle (such as a cabinet) or a wall.
 
-The Global costmap is seen as the red/cyan areas around certain walls and obstacles. The local costmap is the white cube around the robot and with the Global costmap calculates an inflated distance from obstacles. The cones of the ultrasonic sensors will mark obstacles it detects as small black dots/lines, enough to be detected as an obstacle. The LIDAR marks obstacles and walls using the distance its lasers measure, visualized as red squares, upon which the local costmap will inflate the obstacle's distance by about 10 centimeters.
+The Global costmap is seen as the red/cyan areas around certain walls and obstacles and calculates an inflated distance for each of these obstacles by a set amount, which we've set to around 10 centimeters. 
+
+The local costmap is shown as the white cube around the robot. 
+The LIDAR marks obstacles and walls on the local costmap using the distance its lasers measure, visualized as red squares, upon which the local costmap will inflate the obstacle's distance by about 5 to 10 centimeters, indicated by a black area surrounding the red dots.
+The cones of the ultrasonic sensors indicate their range, and the navigation stack will mark any obstacle the sensors detect as a small black dot/line in its range, enough to be detected as an obstacle by the navigation stack. 
+
+NOTE: Unfortunately, it is unknown if the cones could be replaced by beams in order to reflect the current capabilities of the ultrasonic sensors, as they only measure in a straight line.
+
+The obstacles persist for a set amount of time, but will not always be removed automatically, after some time or by walking around the robot, the obstacles could clear, but it is also possible to refresh the costmaps by issuing this command in a terminal window:
+[source,bash]
+----
+rosservice call /move_base/clear_costmaps
+----
 
 The "footprint" of the robot, visible as the green rectangle in the center, indicates its location and is used in calculating whether or not WTR is in an obstacle or not. It is a key for obstacle detection to work using the following rules:
 
