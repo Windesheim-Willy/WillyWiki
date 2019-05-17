@@ -34,7 +34,7 @@ image::assets/costmaps_view.png[]
 
 The gray areas are the pre-generated map of the fifth floor in the T-building of Windesheim. Light gray equals areas where Willy can move freely, Dark gray equals an obstacle or wall.
 
-The Global costmap is seen as the red/cyan blotches around certain walls and obstacles. The local costmap is the white cube around the robot and with the Global costmap calculates an inflated distance from obstacles. The cones of the ultrasonic sensors will mark obstacles it detects as small black dots/lines, enough to be detected as an obstacle. The LIDAR marks obstacles and walls using the distance its lasers measure, visualized as red squares, upon which the local costmap will inflate the obstacle's distance by about 10 centimeters.
+The Global costmap is seen as the red/cyan areas around certain walls and obstacles. The local costmap is the white cube around the robot and with the Global costmap calculates an inflated distance from obstacles. The cones of the ultrasonic sensors will mark obstacles it detects as small black dots/lines, enough to be detected as an obstacle. The LIDAR marks obstacles and walls using the distance its lasers measure, visualized as red squares, upon which the local costmap will inflate the obstacle's distance by about 10 centimeters.
 
 The "footprint" of the robot, visible as the green rectangle in the center, indicates its location and is used in calculating whether or not WTR is in an obstacle or not. It is a key for obstacle detection to work using the following rules:
 
