@@ -1,7 +1,7 @@
 include::../Header.adoc[]
 
 == Power node
-The power node contains all main components for driving of Willy.
+The power node is the centerpiece of Willy The Robot. It is a laptop with a powerful enough processor and plenty of memory to run the ROS core, autonomous driving algorithms and much, much more.
 
 === Repository
 ====

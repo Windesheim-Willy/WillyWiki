@@ -1,26 +1,34 @@
 include::../Header.adoc[]
 
 == Willy WRT
-In order to let all the hardware nodes communicate between each other (and to Skylab) an OpenWRT router was used, named WillyWRT. 
+In order to let all the hardware nodes communicate between each other (and to Skylab) an OpenWRT router was used, to keep with the theme, the node is aptly named: WillyWRT. 
 
-The router is installed on a Raspberry Pi and OpenWRT is used as the hardware is easily capable of running on a low-power device. It was preferred to use another Raspberry Pi for this functionality, since aside from its power requirements, it has a small form-factor and easily replaceable as well as the low purchase cost.
+The router is installed on a Raspberry Pi 3b+ and OpenWRT is used as the operating system, since it is optimized to run a fully fledged network router on a low-power device. Aside from its power requirements , it has a small form-factor, and easily replaceable due to the low purchase cost.
 
 link::https://downloads.openwrt.org/releases/[Stable releases OpenWRT]
 
-NOTE:While in other section it might still mention something about OpenWRT not being compatible with the RP 3b+, as of the time of writing this note (12/02/19) OpenWRT has been updated to run on said device. As such, a Raspberry Pi provided by Windesheim is used, and no longer needs replacing.
+NOTE: While in other sections it might still mention something about OpenWRT not being compatible with the RPi 3b+, as of the time of writing this note (12/02/19), OpenWRT has released (nightly) builds that run on said device. As such, a Raspberry Pi provided by Windesheim is used, and no longer needs replacing.
 
-=== Connection
+=== Wireless Connection
 
-We requested Windesheims ICT department to give WillyWRT Wireless access to the internet, so all peripherals can communicate with the outside world. 
-The MAC-address is whitelisted and in the password documentation you can find the SSID and password. 
+Due to safety concerns, WTR does not communicate to the Internet anymore aside from the Power Node for time synchronization via NTP and critical updates to ROS. 
+Instead, a secured Wi-Fi access point was created to allow for remote control via VNC/SSH and wireless file transferring.
 
-=== Physical
+Like the physical connection; the wireless access point assigns dynamic IP addresses in the same range.
 
-The Wireless interface connects to the SSID provided by Windesheim, the LAN interface connects to a switch and provides (static) DHCP leases to the various hardware on physical Willy. We also applied a custom etc/hosts entry to make sure the ROS master can always resolve the FQDNs and/or hardware. 
+=== Physical connection
 
-NOTE: ROS communicates via the ROS master suggest to read up on this process as well. Make sure the different hardware nodes can communicate on DNS name and IP-adress. This can take a lot of time troubleshooting. 
+Ethernet cables are used in conjunction with a networking switch to connect each Raspberry Pi, the LIDAR and the Laptop(Power Node) together in a local area network contained upon WTR. Ideally, this should be airgapped to prevent unauthorized access; once the security is compromised, any malicious attacker could turn the robot into a dangerous entity.
+
+NOTE: It is important that the laptop and the router pi are connected to the switch at a minimum. ROS requires that the network is initialized in order to run.  
+
+The network diagram is as following:
+
+image::WillyWRT/WTR_network.svg[Network diagram of WTR]
 
 === VPN Tunnel
 
-Another reason for us to choose for OpenWRT is to use an openVPN tunnel between Skylabs PFsense firewall and Willy's LAN. Since configuring openVPN on openWRT can be challenging we have also exported the working configuration. 
+IMPORTANT: This might no longer function as the sixth group did not require remote access on this level, plus the router pi was since rebuilt to accomodate the new version of the raspberry pi hardware.
+
+A reason for us to choose for OpenWRT is to use an openVPN tunnel between Skylabs PFsense firewall and Willy's LAN. Since configuring openVPN on openWRT can be challenging we have also exported the working configuration. 
 link:{url}hardware_nodes/WillyWRT/backup-Export-WillyWRT-2018-12-12.tar.gz[WillyWRT current configuration.]

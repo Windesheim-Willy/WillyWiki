@@ -3,9 +3,11 @@ include::../Header.adoc[]
 IMPORTANT: This pages needs to be up to date. 9-1-2019 latest updated. 
 
 
-== Lessons Learned
+= Lessons Learned
 
-This page contains a list of lessons we learned during the development of Willy during the 2018 semesters. 
+This page contains a list of lessons we learned during the development of Willy during the 2018/2019 semesters. 
+
+== Group 5: 2018-2019
 
 === Driving
 - It is quite hard to deploy and undeploy the brakes.

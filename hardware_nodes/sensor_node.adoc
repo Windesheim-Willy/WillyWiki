@@ -1,7 +1,7 @@
 include::../Header.adoc[]
 
 == Sensor node
-The sensor node contains components to process sensor information and publish this information on a topic.
+The sensor node contains components to process sensor information and publish this information on the respective topic(s).
 
 === Repository
 ====
