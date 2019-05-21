@@ -2,7 +2,9 @@ include::../Header.adoc[]
 
 == Brain
 
-The brain brings all the components together. The brain make decisions how and where to drive. This is based on priorities which will be explained in the background chapter.
+NOTE: The sixth group had discovered that the brain is not necessary for WTR to operate, neither does it bring 
+
+The brain keeps track of all the components and make decisions on how and where to drive. This is based on priorities which will be explained in the background chapter.
 
 === Repository
 ====

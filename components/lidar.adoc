@@ -1,7 +1,7 @@
 include::../Header.adoc[]
 
-== Lidar
-The lidar is a node to process the raw LIDAR information to the LIDAR topic.
+== LIDAR
+The LIDAR is a node to process the raw LIDAR information to the LIDAR topic.
 
 === Repository
 ====
@@ -21,13 +21,13 @@ the sensor makes a map of all the objects in the environment.
 image:../archive/2018S1/Research/media/current-status/image13.jpeg[image]
 
 The previous group has done some research concerning LIDAR and the link to
-ROS. But came to the conclusion that it is not possible to create a link
+ROS, but came to the conclusion that it is not possible to create a link
 between LIDAR and ROS. Therefore they decided to not implement the LIDAR
 sensor.
 
-After doing some research we found that it is possible and supported to link ROS to a LIDAR sensor.
+After doing some research it was found that it is possible and supported to link ROS to a LIDAR sensor.
 
-At this stage we use the LIDAR to navigate with Willy. The sensor is 
+At this stage LIDAR is used to navigate with Willy. The sensor is 
 placed at the front of the robot.
 
-The LIDAR is connected with an Ethernet connection via a router to the pc.
+The LIDAR is connected with an Ethernet connection via a switch to the pc.

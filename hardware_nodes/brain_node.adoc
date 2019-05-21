@@ -1,7 +1,7 @@
 include::../Header.adoc[]
 
 == Brain node
-The brain node contains all the components for the main operation of Willy.
+The Brain node supposedly contains all the components for the main operation of Willy, but acts more as a second driver with the Power Node.
 
 === Repository
 ====
