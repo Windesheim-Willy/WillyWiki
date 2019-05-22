@@ -14,11 +14,18 @@ Willy has a switchbox in the rear left corner with four switches marked appropri
 . **Start the ROS Master on the laptop** +
 Once the laptop is powered on, log in to the `willy` account, open a Terminal window and use the alias `startwilly` to run the ROS Master, Motor Controller and Joystick interface at once. Push the glossy center button on the controller and verify that one light is lit up on the front of the controller.
 
+. **Start the ROS Master on the sensor node** +
+After the ROS Master has been booted, the ultrasonic sensors and IMU data isn't integrated yet. To visualise these, you will need to start the sensor node from the laptop.
+Open a terminal window on the laptop and start an SSH session with the command `ssh ubuntu@sensornode` to remotely access the sensor node Raspberry Pi. Once you're in, invoke the start-up script `./start_sensornode.sh` and look back to RViz to see if the sensors pop up.
+
+
 . **Release the emergency stop** +
 Do this once the ROS master has started and RViz is visible. 
 
 . **Optional: Mark the estimated location of Willy The Robot on the map** +
 Optionally, you can mark Willy's location on the map using the "2D Pose Estimate" button. Scroll to the area on the map where Willy is located, click on the beforementioned button, click and hold on the map where Willy is located, a green arrow will appear indicating the orientation. Drag to the appropriate orientation, then let go.
+
+NOTE: It is necessary to start up the master on the laptop before starting the sensor node, otherwise the footprint will not be visible and the local planner would not function.
 
 IMPORTANT: By default the *brain* could take over control. Make sure to move Willy to a safe place with the controller first.
 
