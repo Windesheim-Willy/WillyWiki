@@ -3,7 +3,7 @@ include::../Header.adoc[]
 == Sonar
 As the LIDAR is not able to detect glass consistently, Willy is equipped with 8 sonar sensors. The sensors used are HC-SR04 ultrasonic sensor. These sensors are mounted on 3D printed ball joints, as shown in the picture below.
 
-image:../media/SonarSensorAssembly.PNG[]
+image:../media/SonarSensorAssembly.png[]
 
 
 === Repository
