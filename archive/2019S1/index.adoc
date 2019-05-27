@@ -1,0 +1,22 @@
+== Group of 2019 Q3 & Q4
+
+=== Members
+
+[cols="2,1"] 
+.Student list of 2019 Q3-Q4
+|===
+|Student|Study Major
+
+|Tom van der Noort|HBO-ICT SE
+|Thomas Zwaanswijk|HBO-ICT ESA
+|Jeroen van 't Hul|HBO-LED Mechatronica
+|===
+
+=== Main task
+Our main goal was to further improve the autonomous capabilities of Willy the Robot (WTR). This was done by implementing closed loop control, an inertial measurements unit and a new planner. Furthermore we improved mechanical parts, the safety and transferability.
+
+=== Archive
+
+All our documents will be transferred to the new student group through SharePoint. Everything including templates and images for virtual machines and other hardware will be included in the process.
+
+https://liveadminwindesheim.sharepoint.com/sites/O365-Winnie/Gedeelde%20documenten/Forms/AllItems.aspx?csf=1&e=M8ZEAY&cid=20c42d2b-eef8-48aa-b01e-1afd7db8ff08&FolderCTID=0x012000BB308D7E0AFC8544A6FC7311DA71F457&id=%2Fsites%2FO365-Winnie%2FGedeelde%20documenten%2FArchief%20Willy%2F2019%20S1[2019 Q3 & Q4 SharePoint archive]
