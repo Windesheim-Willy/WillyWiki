@@ -1,6 +1,7 @@
 include::../Header.adoc[]
 
 == MPU9250
+
 The MPU9250 is a 9-axis Inertia Measurement Unit. This means that it can detect rotation in 9 directions.
 It does this by utilizing an accelerometer, gyroscope and magnetometer.
 The IMU is located on the top of the screen, in a 3-d printed box with the words "IMU TOP" printed on the lid.
@@ -38,3 +39,5 @@ Sometimes it is needed to set the "set point"  to 0. The command to do this is a
 ----
 rosservice call /imu/set_zero_orientation
 ----
+
+This will make WTR regard its current heading as the zero point for the IMU, which can be called on startup if the data is misaligned.

@@ -50,7 +50,7 @@ link:{url}/components/index.html[Components]::
         - link:{url}/components/social_interaction.html[Social interaction]
         - link:{url}/components/speech.html[Speech]
        	- link:{url}/components/speech_recognition.html[Speech recognition]
-        - link:{url}/components/MPU9250.adoc[IMU]
+        - link:{url}/components/mpu9250.adoc[IMU]
         - link:{url}/components/human_detection.adoc}[Human Detection]
 
 link:{url}/skylab/index.html[Skylab]::
