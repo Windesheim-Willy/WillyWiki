@@ -1,3 +1,5 @@
+include::../Header.adoc[]
+
 == How to start with Willy
 
 Before understanding how Willy works, it is helpful to drive around with it for a bit. 
