@@ -40,5 +40,3 @@ For development purposes it can be usefull to build the Dockerfile locally and t
 ----
 docker-compose -f docker-compose.yml -f docker-compose.build.yml up
 ----
-
-lets start a test
