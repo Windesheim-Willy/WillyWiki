@@ -6,7 +6,7 @@ include::../Header.adoc[]
 A simple overview of all the hardware in Willy is given in the
 following scheme:
 
-image:media/connections.png[image]
+image:media/Network_Drawing.PNG[image]
 
 === Components
 This chapter contains all the components with explanation.
@@ -207,11 +207,8 @@ image:media/Willy.png[image]
 It should be noted that not all the sensor are read at the same time.
 The numbers sensors are read in a sequence. Only the lowest value is published to the topic.
 
-==== EMU
-To allow Willy to have a quick fix in his drive algorithm, we have implemented a EMU. The EMU will help the AMCL algorithm to find his heading.
-
-==== Screen
-The screen used is a KDL-42W815B <<2>> from Sony. The screen is connected to
+==== Television
+The television used is a KDL-42W815B <<2>> from Sony. The screen is connected to
 the Social Interaction Pi with an HDMI cable and will display an image of Willy and instructions on how to talk to Willy. 
 The manual can be found at the bottom of
 this document.
