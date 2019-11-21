@@ -1,0 +1,73 @@
+== How to start with Willy
+
+Before understanding how Willy works, it is helpful to drive around with it for a bit. 
+
+To do this you could choose between autonomous driving, manual or through your hand movements.
+
+== Start procedure
+
+To get Willy up and running, the following procedure must be followed.
+
+1.	Twist the red handle on the left side of Willy vertically. This is the switch for the central power circuit of Willy. Be aware of the red emergency button above the laptop. (This button enables the emergency brakes when pushed down)
+
+2.	Charge the battery of Willy and the laptop. Both chargers can be found on or near Willy. Willy’s charging port can be found underneath the previously mentioned red handle. Willy can only be charged if the handle is positioned vertically. (You should be able to hear when Willy is turned on)
+
+3.	Start the laptop.
+
+4.	Open a terminal.
+
+5.	Make your choice between manual, LEAP motion or autonomous driving. The explanation on how to use these modes will be explained below.
+
+== Manual driving
+
+Willy can be controlled manually with the PS2 controller. This is the procedure:
+
+1.	Make sure the controller is plugged into Willy’s left USB port on the laptop.
+
+2.	Open a terminal on the laptop.
+
+3.	Enter the command: “startjoystick” in the terminal. 
+
+4.	Open a new terminal.
+
+5.	Enter the command: “startmotorcon” in the terminal.
+
+6.	Press the PlayStation button in the center of the controller to turn it on. A red light should now burn on top of the controller. 
+Whenever the controller is activated, the laptop’s touchpad might act weird.
+
+7.	Disengage the emergency brakes. (By releasing the emergency button)
+
+8.	Willy can now drive by moving the left joystick while holding the R1 button. There is some delay, so caution is necessary.
+
+== Autonomous driving
+
+Willy has the capability to drive autonomously. This is the procedure:
+
+1.	Open a terminal.
+
+2.	Enter the command: “startwilly” and enter the password.
+
+3.	A new window opens called Rviz. This is used to control Willy and visualize its position.
+
+4.	On this window you can see a map of T5.
+
+5.	Disengage the emergency brakes. (By releasing the emergency button)
+
+6.	In Rviz, set Willy’s pose estimate within the T5 environment.
+
+7.	In Rviz, drag a destination arrow on the map. This will enable Willy to try and drive to the location autonomously.
+
+== Leap motion control
+
+Willy can be controlled with hand movements using the LEAP motion sensor . This is the procedure:
+
+1.	Open a terminal.
+
+2.	Enter the command “startleap”. 
+
+3.	A few terminals will now open with the input that ROS gets from the LEAP controller.
+
+4.	Disengage the emergency brakes. (By releasing the emergency button)
+
+5.	Control Willy with hand movements(Roll and pitch). This might require some practice.
+ 
