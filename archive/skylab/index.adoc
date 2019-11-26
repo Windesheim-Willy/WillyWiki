@@ -1,5 +1,4 @@
-
-include::./Header.adoc[]
+include::../../Header.adoc[]
 
 include::setup_skylab.adoc[]
 
