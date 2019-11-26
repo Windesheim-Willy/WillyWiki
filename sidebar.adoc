@@ -32,9 +32,9 @@ link:{url}/architecture/index.html[Architecture]::
         - link:{url}/architecture/rostopics.html[ROS topic design]
 
 link:{url}/hardware_nodes/index.html[Hardware nodes]::
-        - link:{url}/hardware_nodes/sensor_node.html[sensor node]
-        - link:{url}/hardware_nodes/si_node.html[si node]
-        - link:{url}/hardware_nodes/power_node.html[power node]
+        - link:{url}/hardware_nodes/sensor_node.html[Sensor node]
+        - link:{url}/hardware_nodes/si_node.html[Social Interaction node]
+        - link:{url}/hardware_nodes/power_node.html[Power node]
         - link:{url}/hardware_nodes/willy_wrt.html[WillyWRT]
 
 link:{url}/components/index.html[Components]::
@@ -49,8 +49,8 @@ link:{url}/components/index.html[Components]::
         - link:{url}/components/social_interaction.html[Social interaction]
         - link:{url}/components/speech.html[Speech]
        	- link:{url}/components/speech_recognition.html[Speech recognition]
-        - link:{url}/components/MPU9250.adoc[IMU]
-        - link:{url}/components/human_detection.adoc}[Human Detection]
+        - link:{url}/components/MPU9250.html[IMU]
+        - link:{url}/components/human_detection.html[Human Detection]
 
 link:{url}/Radeffect_app/index.html[Radeffect App]::
         - link:{url}/Radeffect_app/Radeffect_app.html[Radeffect App]
