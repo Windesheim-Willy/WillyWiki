@@ -3,3 +3,7 @@ include::../Header.adoc[]
 include::previousgroups.adoc[]
 
 include::Archiveresearch.adoc[]
+
+include::Skylab.adoc[]
+
+include::skylab/index.adoc[]

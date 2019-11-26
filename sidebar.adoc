@@ -29,7 +29,6 @@ link:{url}/ros/index.html[Robotic Operating System]::
 link:{url}/architecture/index.html[Architecture]::
         - link:{url}/architecture/Software.html[Software Architecture]
         - link:{url}/architecture/Hardware.html[Hardware Architecture]
-        - link:{url}/architecture/Skylab.html[Skylab Architecture]
         - link:{url}/architecture/rostopics.html[ROS topic design]
 
 link:{url}/hardware_nodes/index.html[Hardware nodes]::
@@ -72,3 +71,5 @@ link:{url}/lessons_learned/index.html[Lessons learned]::
 link:{url}/archive/index.html[Archive]::
         - link:{url}/archive/previousgroups.html[Previous Groups]
         - link:{url}/archive/Archiveresearch.html[Research Archive]
+        - link:{url}/archive/Skylab.html[Skylab Architecture]
+		- link:{url}/archive/skylab/index.html[Skylab]
