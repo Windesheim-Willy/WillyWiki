@@ -19,7 +19,6 @@ link:{url}/buildofwilly/index.html[Build of Willy]::
         - link:{url}/buildofwilly/Background.html[Design history]
         - link:{url}/buildofwilly/Design-guide.html[Requirements]
         - link:{url}/buildofwilly/Technical.html[Design reference]
-        - link:{url}/buildofwilly/Realisation.html[Physical build]
         - link:{url}/buildofwilly/Hardware.html[Hardware]
 
 link:{url}/ros/index.html[Robotic Operating System]::
@@ -65,3 +64,4 @@ link:{url}/archive/index.html[Archive]::
 	- link:{url}/archive/skylab/index.html[Skylab]
         - link:{url}/ros/multi_master.html[Multi master]
         - link:{url}/hardware_nodes/willy_wrt.html[WillyWRT]
+        - link:{url}/buildofwilly/Realisation.html[Physical build]

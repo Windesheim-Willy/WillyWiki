@@ -14,3 +14,12 @@ The article and the photo of Willy can be found on the website of de Stentor:
 After the article from de Stentor we got response from the Win' newspaper by email. The Win' crew read our article and they became interested to write something about Willy too. After some email contact we planned a meeting and gave an interview. Also the photograph took some pictures of our Willy. The article can be read on the following web page.
 
 `https://www.hogeschoolkrantwin.nl/2018/05/17/afvalrobot/`
+
+=== Media plan
+
+A media plan was created to improve publicity for Willy. This was presented to the product owner and used throughout the project. If future groups want to use the media plan to create more publicity it can be found on the drive of the project group of 2019 Q1/Q2.
+
+
+=== Showcase at open day
+
+Willy was showcased at the open day of November 2019. Here the project group showed Willy to future students who where interested in HBO-ICT. This was one of the idea's that came from the mediaplan that was made to insure more publicity for Willy.
