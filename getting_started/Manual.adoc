@@ -1,0 +1,15 @@
+include::../Header.adoc[]
+
+=== What is the manual
+The manual has been made to let other groups get a headstart in understanding Willy. Every time a new group started the project it was hard to get a grip on all the different aspects. In the manual these aspects have been put together so it's a lot easier to get started. This reduces the time spent on trying to figure out how Willy works and gives a detailed discription on the different problems the last group came across.
+
+=== Where to find the manual
+The manual is located in the drive of the last project group.
+
+link:[Willy handleiding]
+
+Follow this tutorial to understand the basics of Willy and where to start.
+
+=== The usage of this manual
+To keep the other project groups up to speed that will work on the project after the current group, it is advised to update this document at the end of the project. Add all the added functionality to the manual.
+
