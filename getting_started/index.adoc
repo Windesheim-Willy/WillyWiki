@@ -5,3 +5,7 @@ include::Development-guide.adoc[]
 include::Driving-Willy.adoc[]
 
 include::Wiki.adoc[]
+
+include::Introduction.adoc[]
+
+include::Manual.adoc[]

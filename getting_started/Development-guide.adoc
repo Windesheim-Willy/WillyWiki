@@ -1,7 +1,7 @@
 include::../Header.adoc[]
 
 == Development Guide
-The software components written for Willy The Robot are diverse but kept to three major languages. These are Python, C++ and Javascript. The following guide shall explain general instructions for developing on either platform within the project.
+The software components written for Willy The Robot are diverse but kept to three major languages. These are Python, C++ and Javascript. The following guide shall explain general instructions for developing in each language within the project.
 
 === Prerequisites
 
