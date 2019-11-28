@@ -25,7 +25,6 @@ link:{url}/buildofwilly/index.html[Build of Willy]::
 link:{url}/ros/index.html[Robotic Operating System]::
         - link:{url}/ros/Introduction.html[Introduction to ROS]
         - link:{url}/ros/tutorials.html[ROS Tutorials]
-        - link:{url}/ros/multi_master.html[Multi master]
 
 link:{url}/architecture/index.html[Architecture]::
         - link:{url}/architecture/Software.html[Software Architecture]
@@ -64,4 +63,5 @@ link:{url}/archive/index.html[Archive]::
         - link:{url}/archive/previousgroups.html[Previous Groups]
         - link:{url}/archive/Archiveresearch.html[Research Archive]
         - link:{url}/archive/Skylab.html[Skylab Architecture]
-		- link:{url}/archive/skylab/index.html[Skylab]
+	- link:{url}/archive/skylab/index.html[Skylab]
+        - link:{url}/ros/multi_master.html[Multi master]
