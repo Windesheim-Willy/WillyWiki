@@ -10,7 +10,7 @@ link:{url}/projectwilly/index.html[Project Willy]::
         - link:{url}/projectwilly/Sponsors.html[Sponsors]
 
 link:{url}/getting_started/index.html[Getting started]::
-        - link:{url}/ros/Introduction.html[Introduction to ROS]
+        - link:{url}/getting_started/Introduction.html[Introduction to ROS]
         - link:{url}/getting_started/Development-guide.html[Development Guide]
         - link:{url}/getting_started/Driving_Willy.html[Driving Willy]
         - link:{url}/getting_started/Manual.html[Manual]
@@ -59,6 +59,6 @@ link:{url}/archive/index.html[Archive]::
         - link:{url}/archive/Archiveresearch.html[Research Archive]
         - link:{url}/archive/Skylab.html[Skylab Architecture]
 	- link:{url}/archive/skylab/index.html[Skylab]
-        - link:{url}/ros/multi_master.html[Multi master]
-        - link:{url}/hardware_nodes/willy_wrt.html[WillyWRT]
-        - link:{url}/buildofwilly/Realisation.html[Physical build]
+        - link:{url}/archive/multi_master.html[Multi master]
+        - link:{url}/archive/willy_wrt.html[WillyWRT]
+        - link:{url}/archive/Realisation.html[Physical build]
