@@ -16,13 +16,13 @@ The students (mechanical engineering), of the second iteration, have occupied th
 During the third iteration, HBO-ICT students have been working on realizing the autonomous functionality of Willy. An important characteristic of Willy is, that he must be able to function completely autonomously on the Grote Markt in Zwolle (this is a further feature of functionality that Willy should also be able to function in buildings). This meant in the first instance that the project group had to deal with determining the right kind of sensors. Without sensors it would be impossible to recognize objects and therefore avoid them. These sensors eventually had to be linked to Willy's Operating System (ROS). This project group has also been involved in writing an algorithm, which Willy will be able to drive a fixed pattern within a defined area.
 
 ==== Fourth Iteration
-The start of the fourth iteration started roughtly. With the mixed intrests of the productowner of Willy (owner of the IP) TAoR and HBO-ICT Windesheim the project collaboration came to a halt and Windesheim purchased the IP of Willy. The new product owner has set new and different goals. Two teams during this iteration worked on the autonomous navigation on building T5 and the other team worked on social interaction for Willy. 
+The start of the fourth iteration started roughly. With the mixed intrests of the productowner of Willy (owner of the IP) TAoR and HBO-ICT Windesheim the project collaboration came to a halt and Windesheim purchased the IP of Willy. The new product owner has set new and different goals. Two teams during this iteration worked on the autonomous navigation on building T5 and the other team worked on social interaction for Willy. 
 Another main/side goal is the transference of the current project phase, to make sure that the following iteration has a running start.
 
-NOTE:the fifth iteration seems to be missing. According to the "previous groups" section, there should be five groups and we should be the sixth (group 2019 Q1&2)
-
-==== Sixth Iteration
+==== Fifth Iteration
 During this iteration the focus was on autonomous driving and general structural improvements.
 The plan is to use a set of rotary encoders on the front wheels, as well as using a 9-axis IMU, rather than the accelerometer/gyroscope EMU, which has 6. This would allow for a greater degree of tracking the position/rotation of Willy, and therefore allow more careful control of the motors.
 As a side goal, we took it upon ourselves to correct some of the grammatical and spelling mistakes made within this wiki, as well as a few factual errors regarding the control of Willy.
 
+==== Sixth Iteration
+During this project there where a number of tasks to complete. The first one was fixing the autonomous driving. Willy still had problems with autonomous driving and the group focussed on this problem throughout the project. Furthermore the group noticed the problem of transferring the project to the next group. Since there weren't any guildlines excluding this Wiki the group made a manual on how to start the project. This includes all the different problems the group came across and a step by step guild on starting with Willy. Lastly the group focussed on ways to create attention for Willy in the media. The goal was to attract more attention to HBO-ICT Windesheim from future students.

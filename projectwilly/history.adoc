@@ -1,6 +1,6 @@
 include::../Header.adoc[]
 
-== History of Willy
+== The start of Willy
 
 === The birth of an idea
 
@@ -23,5 +23,5 @@ that works to increase the awareness of robot technology in today's society. ' T
 TAoR responded enthusiastically to this proposition and subsequently made a plan on how they 
 could best realize Willy. Ruud van der Burg contacted Hogeschool Windesheim on behalf of 
 TAoR with the proposal to see if it would be possible to let students (of different 
-disciplines) work at Willy. Windesheim has agreed to this, with which the realization process 
+disciplines) work at Willy. Windesheim agreed to this, with which the realization process 
 of Willy started.
