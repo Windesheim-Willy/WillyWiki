@@ -2,6 +2,8 @@ include::../Header.adoc[]
 
 include::Development-guide.adoc[]
 
+include::Design-guide.adoc[]
+
 include::Driving-Willy.adoc[]
 
 include::Wiki.adoc[]
