@@ -48,23 +48,3 @@ image::media/looproute.png[]
 This area is known as "The innovation lab".
 The code to open the door can be obtained from the teacher coaching the project.
 
-
-
-== Status
-
-The table below shows all the milestones and their current status.
-
-[width="100%",options="header,footer"]
-|====================
-|Milestone  |Researched  |Realized  |Tested  |Category
-|Assessment current status|Done  |Done  |Done  |Documentation
-|Willy Improvisation  |Done  |Done  |Done  |Hardware Software Documentation
-|Design  |Done  |Done  |Done  |Software
-|WillyWiki    |Done  |Done  |Done  |Software
-|Willy web | Done | Done  | Done  | Software
-|Indoor navigation  |Done  |Done  |Done  |Software Hardware
-|Plating | Done  | Needs update |  |Hardware
-|Social interaction |Done  |In progress  |  |Software
-|====================
-
-

@@ -29,7 +29,7 @@ catkin_make -j4
 catkin_make install
 ----
 
-An alias for this process is available, type the command: `catbmi` (Build, Make, Install) and the above list will be run automatically in order.
+An alias for this process is available, type the command: `catbmi` (Build, Make, Install) and the list above will be run automatically in order.
 
 Important to note: Compilation on a Raspberry Pi can often result in the OS running out of (virtual) memory. To mitigate this, it is urged to use a spare 4GB or larger USB drive as swap space. The following commands will let you set this up, but do note that administrative privileges are required and that the USB drive could experience strain when being used as a makeshift RAM stick.
 
@@ -122,7 +122,7 @@ https://nodejs.org/en/download/
 npm install sails -g
 * If on Windows:
 . Install Ubuntu
-- Got to Microsoft store
+- Go to Microsoft store
 - Search for 'Ubuntu'
 - Click get/install
 . Install ROS
@@ -142,7 +142,7 @@ roscore
 (ctrl+c)
 
 === Github
-* Invite your personal Github account to acces Windesheim-Willy repos
+* Invite your personal Github account to access Windesheim-Willy repos
 https://github.com/orgs/Windesheim-Willy/people
 * Clone Git Repo
 [source,bash]
@@ -152,7 +152,7 @@ git clone https://github.com/Windesheim-Willy/repo-name
 git checkout -b origin/test
 
 === Compilation
-Compilation is done via catkin, this is done to create a rospackage so that nodejs can run in a ROS enviroment.
+Compilation is done via catkin. This is done to create a rospackage so that node.js can run in a ROS enviroment.
 [source,bash]
 cd WWEB/src
 npm install
@@ -188,7 +188,7 @@ rosrun willyweb start.sh
 
 [NOTE]
 --
-The rosrun command might not have acces to port 80 for this to work use sudo -s
+The rosrun command might not have acces to port 80. For this to work use sudo -s
 [source,bash]
 ----
 sudo -s
@@ -197,7 +197,7 @@ rosrun willyweb start.sh
 --
 
 === Running Scripts
-In the same manner as you would do <<Testing/Debugging>> you can also run scripts.
+In the same manner as you would do <<Testing/Debugging>> , you can also run scripts.
 Scripts are located in the folder 'WWEB/src/scripts'.
 
 . Start Roscore
@@ -232,7 +232,7 @@ Rosrun makes it possible to communicate with ROS because it is now run as a ROS 
 
 [NOTE]
 --
-The 'start.sh' script consist out of a simple run script which launches the webplatform
+The 'start.sh' script consist of a simple run script which launches the webplatform
 [source, bash]
 #!/usr/bin/env bash
 node src/app.js

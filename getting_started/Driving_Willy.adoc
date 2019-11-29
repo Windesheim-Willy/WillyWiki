@@ -28,11 +28,11 @@ Willy can be controlled manually with the PS2 controller. This is the procedure:
 
 2.	Open a terminal on the laptop.
 
-3.	Enter the command: “startjoystick” in the terminal. 
+3.	Enter the command: `startjoystick` in the terminal. 
 
 4.	Open a new terminal.
 
-5.	Enter the command: “startmotorcon” in the terminal.
+5.	Enter the command: `startmotorcon` in the terminal.
 
 6.	Press the PlayStation button in the center of the controller to turn it on. A red light should now burn on top of the controller. 
 Whenever the controller is activated, the laptop’s touchpad might act weird.
@@ -47,7 +47,7 @@ Willy has the capability to drive autonomously. This is the procedure:
 
 1.	Open a terminal.
 
-2.	Enter the command: “startwilly” and enter the password.
+2.	Enter the command: `startwilly` and enter the password.
 
 3.	A new window opens called Rviz. This is used to control Willy and visualize its position.
 
@@ -65,7 +65,7 @@ Willy can be controlled with hand movements using the LEAP motion sensor . This 
 
 1.	Open a terminal.
 
-2.	Enter the command “startleap”. 
+2.	Enter the command `startleap`. 
 
 3.	A few terminals will now open with the input that ROS gets from the LEAP controller.
 

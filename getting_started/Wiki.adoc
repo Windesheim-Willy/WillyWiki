@@ -12,7 +12,7 @@ we followed.
 image::http://mgreau.com/posts/images/cover-asciidoc-ghpages.svg[AsciiDoc to Github Pages with Travis and Docker Asciidoctor,950]
 
 === Why AsciiDoc
-Why AsciiDoc was chosen as our markdown language. During the search for a good Wiki tool, we eventually stumbled upon Github Pages. Github pages in intended to automatically publish markdown for you as a html site and you can add more functions by using Jekyll. However, limitations in Markdown where quickly found and the Jekyll implementation made if far more complex due to different plugins. That's why it is decided to use AsciiDoc at it's raw form.
+Why AsciiDoc was chosen as our markdown language. During the search for a good Wiki tool, we eventually stumbled upon Github Pages. Github pages is intended to automatically publish markdown for you as a HTML site and you can add more functions by using Jekyll. However, limitations in Markdown where quickly found and the Jekyll implementation made if far more complex due to different plugins. That's why it is decided to use AsciiDoc at it's raw form.
 
 This is the main advantage of using Markdown. While you can use plugins, its main functionality makes it the perfect language for creating a Wiki. In terms of markdown languages you can follow this list as a rule of thumb:
 
@@ -123,7 +123,7 @@ after_success:
   - cd output ;
   - git push
 ----
-Here the output folder contains all the converted documents in html files, but still the images need to be copied, else the images would not be shown. Everything that is copied into the output folder is then pushed to the gh-pages branch on GitHub.
+Here the output folder contains all the converted documents in HTML files, but still the images need to be copied, else the images would not be shown. Everything that is copied into the output folder is then pushed to the gh-pages branch on GitHub.
 As you can see in the link:https://raw.githubusercontent.com/Windesheim-Willy/WillyWiki/master/.travis.yml[travis.yml] used some more actions are done by Travis to ensure everything works properly.
 
 [CAUTION]
