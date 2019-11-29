@@ -1,7 +1,5 @@
 include::../Header.adoc[]
 
-include::Background.adoc[]
-
-include::Technical.adoc[]
+include::Design_History.adoc[]
 
 include::Realisation.adoc[]
