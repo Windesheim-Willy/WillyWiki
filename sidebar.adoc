@@ -25,7 +25,7 @@ link:{url}/architecture/index.html[Architecture]::
         - link:{url}/architecture/Software.html[Software Architecture]
         - link:{url}/architecture/rostopics.html[ROS topic design]
 
-link:{url}/hardware_nodes/index.html[Hardware nodes]::
+link:{url}/hardware_nodes/index.html[Raspberry Pi's]::
         - link:{url}/hardware_nodes/sensor_node.html[Sensor node]
         - link:{url}/hardware_nodes/si_node.html[Social Interaction node]
         - link:{url}/hardware_nodes/power_node.html[Power node]
