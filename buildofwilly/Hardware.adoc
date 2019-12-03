@@ -111,7 +111,7 @@ image:../archive/2018S1/Research/media/current-status/image7.png[alt=image7,widt
 
 image:../archive/2018S1/Research/media/current-status/brakeleverremoved.jpg[alt=brakeleverremoved,width=300,height=400]
 
-Make sure to deploy the brakes, otherwise Willy will not work!! There is
+Make sure to deploy the brakes, otherwise Willy will not work. There is
 only one way to detect if the brakes are deployed, which is done by attempting to turn the wheels. If they cannot be turned, or very little, the brakes are on.
 
 IMPORTANT: The wheels should not be able to turn for Willy to function
@@ -155,7 +155,7 @@ The laptop was powered with 19 volts provided from te powerconverter box, it is 
 The fan on top of the power converter box is powered with 12 volts, connected internally.
 The last power converter is set to 5 volts, capable of powering various arduino components if needed.
 
-Al leads are connected to screw terminals at the far side of the power converter box. 
+All leads are connected to screw terminals at the far side of the power converter box. 
 
 ==== Sonar
 
@@ -237,23 +237,19 @@ link ROS to a LIDAR sensor.
 
 NOTE: This Wiki does not state which group performed this exact implementation, but as of 12/02/19 the LIDAR is attached and functional
 
-At this stage we use the LIDAR to navigate with Willy. The sensor is
-placed at the front of the robot.
+The sensor is placed at the front of the robot.
 
 The LIDAR is connected with an Ethernet connection via a Ethernet switch to the pc.
 
 ==== Kinect
 
-IMPORTANT: The Kinect is not being used at this moment. Instead, a camera has been mounted on top of the screen, and is used to detect humans.
-
 image:../archive/2018S1/Research/media/current-status/image11.png[image]
 
-As a method to navigate inside, initially the Kinect was chosen. This is
-not true any more. The Kinect is now used to detect if there is a person
-in front of Willy. A Kinect can create a framework of a person and see
-all movements of that person. By adding a Kinect to willy, willy will
-be able to recognize people and interact with them by using the speech
-recognition of the Kinect.
+As a method to navigate inside, the Kinect is being used to produce a 3d map of the building.
+The 3d map is used to navigate the surroundings. Further the Kinect is used to detect objects
+in front of Willy. This is done to fix the problem of not being able to detect objects at certain heights.
+The Kinect has been used before to fix certain problems, but had been removed due to issues. The last group
+reintroduced the Kinect to fix the problems that came from object detection on certain heights.
 
 There are two versions of the Microsoft Kinect: Kinect 1 for Xbox 360
 and Kinect 2 for Xbox one. See table 1 which list all the different
@@ -283,7 +279,7 @@ its precursor. (Kinect 1 vs 2 specifications: , sd) (Kinect 1
 specifications, sd) (Main factors/features of most industrial computer
 vision hardware., sd)
 
-The Kinect used in Willy is a version 1 Kinect, the old one.
+The Kinect used in Willy is a version 1 Kinect, the old one. In the future it is an idea to implement a Kinect 2 to improve the hardware.
 
 [bibliography]
 == References

@@ -19,12 +19,10 @@ link:{url}/getting_started/index.html[Getting started]::
 
 link:{url}/buildofwilly/index.html[Build of Willy]::
         - link:{url}/buildofwilly/Design_History.html[Design history]
-        - link:{url}/buildofwilly/Technical.html[Design reference]
         - link:{url}/buildofwilly/Hardware.html[Hardware]
 
 link:{url}/architecture/index.html[Architecture]::
         - link:{url}/architecture/Software.html[Software Architecture]
-        - link:{url}/architecture/Hardware.html[Hardware Architecture]
         - link:{url}/architecture/rostopics.html[ROS topic design]
 
 link:{url}/hardware_nodes/index.html[Hardware nodes]::
@@ -62,3 +60,4 @@ link:{url}/archive/index.html[Archive]::
         - link:{url}/archive/multi_master.html[Multi master]
         - link:{url}/archive/willy_wrt.html[WillyWRT]
         - link:{url}/archive/Realisation.html[Physical build]
+        - link:{url}/architecture/Hardware.html[Hardware Architecture]

@@ -13,7 +13,6 @@ The hardware architecture is designed with a set of standpoints just as the soft
 * Variations of OS software is possible as long as topic communication is possible
 * Variations of ROS software is possible as long as topic communication is possible
 * Simultaneous development is possible
-* Skylab communicates safely with Willy
 
 
 === Design
