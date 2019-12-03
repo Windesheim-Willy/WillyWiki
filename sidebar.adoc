@@ -18,7 +18,7 @@ link:{url}/getting_started/index.html[Getting started]::
         - link:{url}/getting_started/Wiki.html[Documentation]
 
 link:{url}/buildofwilly/index.html[Build of Willy]::
-        - link:{url}/buildofwilly/Background.html[Design history]
+        - link:{url}/buildofwilly/Design_History.html[Design history]
         - link:{url}/buildofwilly/Technical.html[Design reference]
         - link:{url}/buildofwilly/Hardware.html[Hardware]
 
