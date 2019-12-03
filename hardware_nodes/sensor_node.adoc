@@ -1,7 +1,8 @@
 include::../Header.adoc[]
 
 == Sensor node
-The sensor node contains components to process sensor information and publish this information on the respective topic(s).
+The sensor node contains components to process sensor information and publish this information on the respective topic(s). All the data that the sensors read are processed through the
+sensor node. 
 
 === Repository
 ====
@@ -11,4 +12,3 @@ https://github.com/Windesheim-Willy/sensor_node[Windesheim-Willy/sensor_node, ro
 === Components
 - link:{url}/components/sonar.html[Sonar]
 - link:{url}/components/openmv.html[OpenMV]
-- link:{url}/components/imu.html[IMU]
