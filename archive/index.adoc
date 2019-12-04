@@ -7,3 +7,9 @@ include::Archiveresearch.adoc[]
 include::Skylab.adoc[]
 
 include::skylab/index.adoc[]
+
+include::IMU.adoc[]
+
+include::multi_master.adoc[]
+
+include::Hardware.adoc[]
