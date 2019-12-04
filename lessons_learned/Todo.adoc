@@ -2,46 +2,15 @@ include::../Header.adoc[]
 
 == ToDo and Advice
 
-=== TODO table	
-[cols="6,1,1,1"] 
-.List of todo items according group 2018 Q3-Q4
-|===
-|Description|BIM|SE|IDS-ESA
-
-|Collecting more sensor information, i.e. when Willy drives over a bump this information is collected to analyse if the floor needs maintenance. | X | X | 
-|Create multiple smaller Willies that collaborate and drive around on different locations.| X | X | 
-|DataScience: Collect more data  to analyse the input of all topic information. Use more machine learning. | X | X | 
-|Financial planning: Develop more financial resources like sponsorship. | X | | 
-|Develop financial ownership and responsibility| X | | 
-|Develop sponsoring and donation program. Financial funding of Willy needs to improve to be able to invest in newer features.| X | | 
-|Marketresearch: The physical hardware will eventually run out of development options. Upgrade to Willy 2.0| X | | X
-|Develop emotion and expression recognition.| X | X | 
-|Develop autonomous driving on other locations than T5 Windesheim without the need of AprilTags or other learning features.| | X | X
-|Implement GPS module for outdoor navigation. | | X | 
-|Research navigation in an area with a lot of glazing.| X | | 
-|Improve autonomous driving specifically for the measurement and movement of Willy.| X | X | 
-|Improve hardware and software for listening. Reduce impact of environmental noise.| | X | 
-|Extend Willy's speech. Introduce multiple voices and languages.| | X | 
-|Extend survey options with open or more difficult questions.| X | X | 
-|Secure Willy's webpage. | | X | 
-|Integrate Social Interaction without the need of Hello Willy. | | X | 
-|Develop speech driving options. | | X | 
-|Create new functions like a Robotarm.| X | X | X
-|Develop AC power features. Willy can be powered on even when not around.| | | X
-|Redesign Skylab. Remove a few hypervisors to make it more manageble.| | | X
-|Move the Skylab machines to the corperate cloud of Windesheim.| | | X
-|Remote power reset for multiple machines on Willy.| | | X
-|Adjust VPNtunnel between Willy and Cloud. Make MultiMaster usable in Skylab.| | | X 
-|React on emotions and expressions.| | X | 
-|Improve look and feel of Willy.| X | | 
-|Use the outcome of the research of Willys social interaction.| X | X | 
-|Benefit of the communication between Social Interaction and Navigation. I.e. drive around if Willy is happy.| | X | 
-|===
+- Develop a roaming mode. At the moment Willy has to be given a position to drive to. In the future Willy should be able to roam around on its own without directions of humans.
+- Create and maintain a social media page. To increase the media attention for Willy, it would be a nice idea to create a social media page dedicated to Willy.
+This would increase the amount of attention to the 
+- Develop the social interaction. There have been multiple groups that worked on the social interaction but still have not made much progress.
+- Human detection. A group worked on human detection but did not fully implement it. To build a good Human detection system would make it possible to
+interact with humans.
+- New Design. Willy is in need of a makeover. The state of Willy at the moment is a bit messy and it would be nice to give Willy an upgrade.
 
 === Advice
 
-The client walks in to Windesheim University of Applied Sciences and is being welcomed by Willy. Willy can drive autonomic inside and outside the University and makes contact to people. During a conversation Willy can recognise human emotions, so he can tell a joke to cheer people up. 
-
-Multiple teams have worked on the projects Willy to realise that dream for the client however there is still much work to be done. 
-
-We have described a few possible future technology projects for our client and project team in the TODO list.
+Try to focus on 1 task instead of taking on too much. Previous groups have done this in the past only to realise that they had taken on too much.
+The best course of action to avoid this and take the project step by step.

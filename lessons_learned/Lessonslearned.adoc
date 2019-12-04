@@ -1,11 +1,19 @@
 include::../Header.adoc[]
 
-IMPORTANT: This pages needs to be up to date. 9-1-2019 latest updated. 
-
-
 = Lessons Learned
 
-This page contains a list of lessons we learned during the development of Willy during the 2018/2019 semesters. 
+== Group 6: 2019 Semester 1
+These are the lessons we learned when developing Willy during the 2019 1st semester.
+
+=== Development
+- When running into a problem, try to make a desision about this as fast as possible. The group ran into problems with the IMU. Instead of scrapping the issue, the group continued to make no progress for a few weeks. This costed the group a lot of time which could have been avoided by not continuing with the IMU.
+- Starting with a development method late. Scrum was implemented in week 3 after the group struggled to work methodically. This caused a bit of delay that could've been avoided by implementing Scrum from the start.
+
+=== Software
+
+=== Hardware
+
+These are the lessons we learned when developing Willy during the 2018/2019 semesters. 
 
 == Group 5: 2018-2019
 
