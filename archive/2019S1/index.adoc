@@ -1,0 +1,26 @@
+== Group of 2018 Q3 & Q4
+
+=== Members
+
+[cols="2,1"] 
+.Student list of 2018 Q3-Q4
+|===
+|Student|Study Major
+
+|Lars Assen|SE
+|Dion Koster|ESA
+|Bas Frericks|IDS
+|Thijmen Bos|IDS
+|Dennis ter Haar|IDS
+|===
+
+=== Main tasks
+Our goals for this semester were to fix the autonomous driving, create a manual for future groups and to clean out any files that are not used. A common occurring problem is that
+project groups have a hard time starting this project. A lot of vague documentation and a lot of outdated features create a lot of confusion. To fix this problem we have decided to
+create a manual to help future groups get started.
+ 
+
+=== Archive
+
+
+//https://liveadminwindesheim.sharepoint.com/:f:/r/sites/O365-Winnie/Gedeelde%20documenten/Archief%20Willy/2018%20S2?csf=1&e=f1Qcjh[2018 Q3 & Q4 SharePoint archive]
