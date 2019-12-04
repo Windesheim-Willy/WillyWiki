@@ -37,15 +37,7 @@ link:{url}/components/index.html[Components]::
         - link:{url}/components/Localization_and_navigation.html[Localization and navigation]
         - link:{url}/components/motor_controller.html[Motor controller]
         - link:{url}/components/joystick.html[Joystick]
-        - link:{url}/components/social_interaction.html[Social interaction]
-        - link:{url}/components/speech.html[Speech]
-       	- link:{url}/components/speech_recognition.html[Speech recognition]
-        - link:{url}/components/IMU.html[IMU]
-        - link:{url}/components/human_detection.html[Human Detection]
 
-link:{url}/Radeffect_app/index.html[Radeffect App]::
-        - link:{url}/Radeffect_app/Radeffect_app.html[Radeffect App]
-        
 link:{url}/lessons_learned/index.html[Lessons learned]::
         - link:{url}/lessons_learned/Todo.html[Todo & Advice]
 	- link:{url}/lessons_learned/Lessonslearned.html[Lessons Learned]      
@@ -60,4 +52,11 @@ link:{url}/archive/index.html[Archive]::
         - link:{url}/archive/Realisation.html[Realisation]
         - link:{url}/archive/Hardware.html[Hardware]
         - link:{url}/archive/brain.html[Brain]
-        - link:{url}/getting_started/Design-guide.html[Requirements]
+        - link:{url}/archive/Design-guide.html[Requirements]
+        - link:{url}/archive/social_interaction.html[Social interaction]
+        - link:{url}/archive/speech.html[Speech]
+       	- link:{url}/archive/speech_recognition.html[Speech recognition]
+        - link:{url}/archive/IMU.html[IMU]
+        - link:{url}/archive/human_detection.html[Human Detection]
+        - link:{url}/archive/Radeffect_app.html[Radeffect App]
+        
