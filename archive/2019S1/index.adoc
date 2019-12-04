@@ -1,9 +1,9 @@
-== Group of 2018 Q3 & Q4
+== Group of 2019 Q1 & Q2
 
 === Members
 
 [cols="2,1"] 
-.Student list of 2018 Q3-Q4
+.Student list of 2019 Q1-Q2
 |===
 |Student|Study Major
 
