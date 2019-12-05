@@ -25,4 +25,3 @@ In the future it might be a good idea to upgrade to a Kinect 2 as the Kinect 2 h
 |Full Skeletons Tracked |2
 |USB Standard |2.0
 |======================================================
-

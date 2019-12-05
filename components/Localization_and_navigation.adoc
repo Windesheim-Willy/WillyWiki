@@ -1,4 +1,5 @@
 include::../Header.adoc[]
+WARNING: this page has to be updated. No longer relevant
 
 == Localization and navigation
 The localization and navigation stack is a collection of nodes and plug-ins which process LIDAR data among others and use it to navigate on a pre-generated map.
