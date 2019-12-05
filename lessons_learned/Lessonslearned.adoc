@@ -10,12 +10,14 @@ These are the lessons we learned when developing Willy during the 2019 1st semes
 - Starting with a development method late. Scrum was implemented in week 3 after the group struggled to work methodically. This caused a bit of delay that could've been avoided by implementing Scrum from the start.
 
 === Software
+- Get the group to learn ROS early on in the project. With everyone up to speed on ROS it makes working with ROS a lot easier.
 
 === Hardware
-
-These are the lessons we learned when developing Willy during the 2018/2019 semesters. 
+- IMU had been removed due to it having issues. This can be caused by faulty hardware and it could be an idea to check out an IMU of better quality.
 
 == Group 5: 2018-2019
+These are the lessons we learned when developing Willy during the 2018/2019 semesters. 
+
 
 === Driving
 - It is quite hard to deploy and undeploy the brakes.
