@@ -1,0 +1,28 @@
+include::../Header.adoc[]
+
+= Kinect
+
+== Development choices
+When analysing Willy the group of 2019 Semester 1 came to the conclusion that there where problems with Willy detecting objects at certain heights. To come up with a soloution 
+the group researched different sensors to find the right one for object detection on certain heights. As a result the Kinect was chosen as it suited the needs and was available to use.
+
+== Kinect Specs
+
+The version of the Kinect is version 1. That is because it was available to use and meant no delays in the project while waiting for the product to arrive.
+In the future it might be a good idea to upgrade to a Kinect 2 as the Kinect 2 has better specs.
+
+[cols=",",options="header",]
+|======================================================
+|Feature |Kinect 1
+|Color Camera |640 x 480 @30 fps
+|Depth Camera |320 x 240
+|Max Depth Distance |apr. 4.5 m
+|Min Depth Distance |40 cm in near mode
+|Depth Horizontal Field of View |57 degrees
+|Depth Vertical Field of View |43 degrees
+|Tilt Motor |Yes
+|Skeleton Joints Defined |20 joints
+|Full Skeletons Tracked |2
+|USB Standard |2.0
+|======================================================
+
