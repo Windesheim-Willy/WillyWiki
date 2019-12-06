@@ -6,7 +6,7 @@ The manual has been made to let other groups get a headstart in understanding Wi
 === Where to find the manual
 The manual is located in the drive of the last project group.
 
-link:{url}/getting_started/media/Handleiding.docx[Download the Manual]
+link:Handleiding.docx[Download the Manual]
 
 Follow this tutorial to understand the basics of Willy and where to start.
 
