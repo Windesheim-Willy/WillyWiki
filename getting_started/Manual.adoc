@@ -1,12 +1,12 @@
 include::../Header.adoc[]
-
+= Manual
 === What is the manual
 The manual has been made to let other groups get a headstart in understanding Willy. Every time a new group started the project it was hard to get a grip on all the different aspects. In the manual these aspects have been put together so it's a lot easier to get started. This reduces the time spent on trying to figure out how Willy works and gives a detailed discription on the different problems the last group came across.
 
 === Where to find the manual
 The manual is located in the drive of the last project group.
 
-include::Handleiding.docx[Download the Manual]
+link:.\Handleiding.docx[Manual]
 
 Follow this tutorial to understand the basics of Willy and where to start.
 
