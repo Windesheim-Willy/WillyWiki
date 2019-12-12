@@ -22,9 +22,6 @@ Ethernet cables are used in conjunction with a networking switch to connect each
 
 NOTE: It is important that the laptop and the router pi are connected to the switch at a minimum. ROS requires that the network is initialized in order to run.  
 
-The network diagram is as following:
-
-image::WillyWRT/WTR_network.svg[Network diagram of WTR]
 
 === VPN Tunnel
 
