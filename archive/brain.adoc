@@ -27,12 +27,12 @@ python src/brain.py
 
 The brain gathers a lot of inputs like: the joystick, move_base, AMCL pose, april tags and human detection. It processes these inputs and saves the latest messages in global variables. Every 100 milliseconds a tick passes in the brain, where it updates the state machine and sends outputs like the cmd_vel, which controls the motor driver. Multiple inputs can send data to the brain and the brain will proxy one of the inputs depending on its state.
 
-image:assets/brain/brain_activity.png[image]
+image:media/brain_activity.png[image]
 
 ROS topics are registered in the brain with a callback function which will run asynchronously alongside the main thread when a message is received. 
 
-image:assets/brain/brain_sequence.png[image]
+image:media/brain_sequence.png[image]
 
 The brain uses a state machine to keep track of it's current task. The following image is a diagram of the state machine:
 
-image:assets/brain/state_machine.png[image]
+image:media/state_machine.png[image]
