@@ -45,21 +45,36 @@ Whenever the controller is activated, the laptop’s touchpad might act weird.
 Before Willy can drive autonomously it is first necessary to map the environment. this is the procedure:
 
 1.	At first you should make a backup of the database in which the 3D map is saved. ( if you want to keep this database. )
+  
   o	Cd ~/.ros
+  
   o	Make a copy of the rtabmap.db, otherwise it will remove the old database.
-   Cp rtabmap.db BACKUP_FILE_NAME
+  
+       Cp rtabmap.db BACKUP_FILE_NAME
+
 2.	Now the mapping can start.
 3.	Go to ~/Documents/willy
 4.	Execute:  start-willy-mapping-kinect.sh
-   o	This script will launch what is necessary to run a mapping session.
+
+  o	This script will launch what is necessary to run a mapping session.
+      
       	Rviz: To visualize what is going on during the creation of the map
+      
       	Hector-mapping: This takes care of the 2D map, the costmap etc.
+      
       	RTABmap: Takes care of creating a 3D map of the location.
+      
       	Motorcontroller: this makes it possible to drive the robot around.
+      
+      
       	Joystick: This package makes it possible to drive the robot around with the PS3 controller.
+
 5.	After launching the mapping script, there will be an Rviz window in which you can monitor what is being mapped.
+   
    o	Now you can drive the robot around using the controller. (To see how the controller works take a look at chapter Manual driving the last steps.)
+   
    o	After completing one round, check the map if it is bad try again, but if it is OK, the map can saved (To create a better map, drive around multiple times.)
+
 6.	At first the Hector 2D map needs to be saved, open an empty terminal and run the following command: "rosrun map_server map_saver -f {name of save file}"
 7.	After making sure the 2D map is saved, the 3D mapped can be saved as well. This can be done by CTRL+C in the terminal, where the bash script is launched from. This will save the 3D map to: ~/.ros/rtabmap.db
 
