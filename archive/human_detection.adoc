@@ -10,7 +10,6 @@ https://github.com/Windesheim-Willy/human_detection[Windesheim-Willy/human_detec
 ====
 
 === General information
-image:media/debug.png[image,width=700]
 
 __Package displaying debug output during development (see debug mode). You see the developer of the package raising 2 fingers telling he's two meters away from the webcam.__
 
@@ -44,9 +43,6 @@ The calculation is performed in `src/human_detection/src/Tracking/Rectangle.cpp`
 
 === Human tracking
 To make the algorithm function well it requires to run above 5 FPS. Since the tracking is done on the tl (top left) and br (bottom right) of a rectangle between each frame. The difference in position for each person may not too big thus requiring a high enough frame rate. Every frame a match has been made, the position of the rectangle is updated. Each match will be placed in an vector (array) as a Rectangle object. The equation can be found in `bool Rectangle::withinOffset(const Rect &rect)`.
-
-=== Technical design
-image:media/class_diagram.jpg[image,width=700]
 
 The two classes _Rectangle_ and _RectangleTracker_ are used to track humans. When extending the tracker with a facial recognising the classes can easily be re-factored. The RectangleTracker can easily be a generic to support both types (assuming you'll write a new face class).
 The _OpenCVTracking_ class handles all OpenCV output and gives the found _Rect_ coordinates to to the _RectangleTracker_ that matches them to an _Rectangle_.
