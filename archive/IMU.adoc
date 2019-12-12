@@ -30,7 +30,7 @@ A comprehensive tutorial on the mathematics behind quaternions can be found link
 
 === Wire
 
-image::assets/imu/arduino-mpu6050.png[MPU6050,300]
+image::media/arduino-mpu6050.png[MPU6050,300]
 
 === set setpoint to 0
 Sometimes it is needed to set the "set point"  to 0. The command to do this is as follows:
@@ -61,7 +61,7 @@ The pose tracking will start automatic when the PI is running. If it doesn't, th
 
 === Wiring schematic
 
-image::assets/imu/arduino-mpu6050.png[MPU6050,300]
+image::media/arduino-mpu6050.png[MPU6050,300]
 
 === Calibration
 Sometimes it is needed to set the sensor's origin to 0. The command to do this is as follows:
