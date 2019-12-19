@@ -22,5 +22,4 @@ create a manual to help future groups get started.
 
 === Archive
 
-
-//https://liveadminwindesheim.sharepoint.com/:f:/r/sites/O365-Winnie/Gedeelde%20documenten/Archief%20Willy/2018%20S2?csf=1&e=f1Qcjh[2018 Q3 & Q4 SharePoint archive]
+https://drive.google.com/drive/folders/1iXSppo7ixLBBuq7eIAkdq87K1_OjAdsh
