@@ -7,17 +7,13 @@
 |===
 |Student|Study Major
 
-|Lars Assen|SE
-|Dion Koster|ESA
-|Bas Frericks|IDS
-|Thijmen Bos|IDS
-|Dennis ter Haar|IDS
+|Tom van den Noort|ESA
+|Jeroen van 't Hul|ESA
+|Thomas Zwaanswijk|ESA
 |===
 
 === Main tasks
-Our goals for this semester were to fix the autonomous driving, create a manual for future groups and to clean out any files that are not used. A common occurring problem is that
-project groups have a hard time starting this project. A lot of vague documentation and a lot of outdated features create a lot of confusion. To fix this problem we have decided to
-create a manual to help future groups get started.
+The goals of this group was to improve the autonomous driving capabilities of Willy.
  
 
 === Archive
