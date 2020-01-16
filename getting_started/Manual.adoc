@@ -21,7 +21,7 @@ image:media/rosgraph.png[image, width=900]
 === Kinect camera
 The image below shows the active nodes and topics for the Kinect camera. This camera sends different camera related data to several other nodes within the process. Most topics on the right are used in the system. Some are for visualization on the RVIZ panel and some are used by other nodes for object avoidance. The nodes on the left are active ones, but not used by the process.
 
-The '/tf' topic publishes to the '/camera/camera_nodelet_manager' node. The node uses this information to know its position within the enviroment.  
+The '/tf' topic publishes to the '/camera/camera_nodelet_manager' node. The node uses this information to know its position within the environment.  
 
 image:media/rosgraph-camera.png[image, width=500]
 
@@ -36,7 +36,7 @@ The nodes and topics shown below are published by the Sensor Node Raspberry Pi. 
 image:media/rosgraph-sonar.png[image, width=300]
 
 === move_base
-Below, the nodes and topics for move_base are seen. This is a very inportant part of the process as it controls the navigation of the robot. It shows the robot's footprint with all sensors attached, displays the costmap on the RVIZ panel and shows all obstacles within this environment. The '/move_base' node listens to the 'move_base_simple/goal' topic. This topic is the goal that is given by a user. Move_base will then navigate towards this goal and create a local and global plan accordingly. The local plan is used to navigate and manoeuvre around obstacles in its local path. The global plan is the route calculated around all global obstacles within the static map. Once the plans are calculated, move_base will sent velocity data to the '/cmd_vel' topic which is used by the serial node (motor controller) to drive the robot.
+Below, the nodes and topics for move_base are seen. This is a very important part of the process as it controls the navigation of the robot. It shows the robot's footprint with all sensors attached, displays the costmap on the RVIZ panel and shows all obstacles within this environment. The '/move_base' node listens to the 'move_base_simple/goal' topic. This topic is the goal that is given by a user. Move_base will then navigate towards this goal and create a local and global plan accordingly. The local plan is used to navigate and manoeuvre around obstacles in its local path. The global plan is the route calculated around all global obstacles within the static map. Once the plans are calculated, move_base will sent velocity data to the '/cmd_vel' topic which is used by the serial node (motor controller) to drive the robot.
 
 image:media/rosgraph-move_base.png[image, width=400]
 
